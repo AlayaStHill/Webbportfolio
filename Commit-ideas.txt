@@ -1,0 +1,2 @@
+Add .gitignore
+create project start - !enter?
