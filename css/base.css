@@ -1,4 +1,5 @@
-:root{
+/* root = settings för hela dokumentet. Globala css-variabler */
+:root {
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
 
@@ -9,5 +10,23 @@
     --color-secondary: #ec1b09;
 
     --color-error: #ec1b09;
-}
 
+
+    --border-radius: 8px;
+
+    /* spacing (gap, padding, margin) */
+    /* ikon + text i knappar/kontaktkort */
+    --space-xxs: 0.25rem;
+    /* sociala medie-ikoner sidebar */
+    --space-xs: 0.5rem;
+    /* phone/email informationskort */
+    --space-sm: 0.75rem;
+    /* padding i större kort */
+    --space-md: 1rem;
+    /* kontakt-kort */
+    --space-lg: 1.5rem;
+    /* mellan stora sektioner */
+    --space-xl: 2rem;
+
+    /* breakpoints (responsiv design) */
+}
