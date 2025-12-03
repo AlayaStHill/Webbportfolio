@@ -1,0 +1,122 @@
+/* === root = settings för hela dokumentet. Globala css-variabler ===*/
+:root {
+    --color-bg: #ebf2fa;
+    --color-surface: #f2f5f9;
+
+    --color-text-heading: #0B0909;
+    --color-text-body: #1A1003;
+    --color-text-muted: #5C5C5C;
+
+    --color-primary: #ff9c1a;
+    --color-secondary: #ec1b09;
+    /* default */
+    --gradient-accent-default: linear-gradient(90deg, #FF9C1A, #E80505);
+    /* hover */
+    --gradient-accent-hover: linear-gradient(90deg, #E68C17, #C20604);
+    /* active */
+    --gradient-accent-active: linear-gradient(90deg, #CC7B14, #A20504);
+
+    --color-error: #ec1b09;
+
+    --font-headings: "Poppins", sans-serif;
+    --font-body: "Raleway", sans-serif;
+
+    --border-radius: 8px;
+    /* knappar */
+    --radius-pill: 20px;
+
+    /* spacing (gap, padding, margin) */
+    /* ikon + text i knappar/kontaktkort */
+    --space-xxs: 0.25rem;
+    /* sociala medie-ikoner sidebar */
+    --space-xs: 0.5rem;
+    /* phone/email informationskort */
+    --space-sm: 0.75rem;
+    /* padding i större kort */
+    --space-md: 1rem;
+    /* kontakt-kort */
+    --space-lg: 1.5rem;
+    /* mellan stora sektioner */
+    --space-xl: 2rem;
+
+    /* breakpoints i media queries (responsiv design) får vara i px?*/
+    --bp-mobile: 480px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1024px;
+}
+
+/* === Reset === */
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    /* WCAG */
+    line-height: 1.5;
+    /* Fallback */
+    background-color: #ebf2fa;
+    color: #0B0909;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* 100%: bilder anpassar sig till containern (blir aldrig större än), responsivitet. I utbildningsreset, inte branch-standard ?*/
+img {
+    /* Gör att bilden aldrig blir större än sin container */
+    max-width: 100%;
+    /* Undvika white gap under bilden som blir med inline-element  */
+    display: block;
+    /* förhindra att browser ger fast höjd, oproportionerlig/ihoptryckt. Jobbar med max-width: 100%, räknar ut höjden i förhållande till bredden så att bilden håller sina proportioner */
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Inte få browser-standard font */
+button,
+input {
+    font: inherit;
+}
+
+/* === Global basestyling === */
+
+
+/* Sätter hover underline för att särskilja länkarna enligt WCAG, eftersom jag stylat bort länk-utseendet */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Lite mjukare, diskret */
+    opacity: 0.8;
+}
+
+/* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
+:focus {
+    outline: 3px solid #0B5FFF;
+    /* avståndet mellan elementet och outline */
+    outline-offset: 4px;
+    border-radius: var(--radius-pill);
+}
+
+/* navbar, scrollning sker på rootelementet */
+html {
+    scroll-behavior: smooth;
+}
