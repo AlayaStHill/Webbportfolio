@@ -1,4 +1,4 @@
-/* root = settings för hela dokumentet. Globala css-variabler */
+/* === root = settings för hela dokumentet. Globala css-variabler ===*/
 :root {
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
@@ -11,7 +11,7 @@
     --color-secondary: #ec1b09;
 
     --color-error: #ec1b09;
-    
+
     --font-headings: "Poppins", sans-serif;
     --font-body: "Raleway", sans-serif;
 
@@ -35,4 +35,52 @@
     --bp-mobile: 480px;
     --bp-tablet: 768px;
     --bp-desktop: 1024px;
+}
+
+/* === Reset === */
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    /* WCAG */
+    line-height: 1.5;
+    /* Fallback */
+    background-color: #ebf2fa;
+    color: #0B0909;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* 100%: bilder anpassar sig till containern (blir aldrig större än), responsivitet. I utbildningsreset, inte branch-standard ?*/
+img {
+    /* Gör att bilden aldrig blir större än sin container */
+    max-width: 100%;
+    /* Undvika white gap under bilden som blir med inline-element  */
+    display: block;
+    /* förhindra att browser ger fast höjd, oproportionerlig/ihoptryckt. Jobbar med max-width: 100%, räknar ut höjden i förhållande till bredden så att bilden håller sina proportioner */
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Inte få browser-standard font */
+button,
+input {
+    font: inherit;
 }
