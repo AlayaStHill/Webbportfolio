@@ -9,6 +9,12 @@
 
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
+    /* default */
+    --gradient-accent-default: linear-gradient(90deg, #FF9C1A, #E80505);
+    /* hover */
+    --gradient-accent-hover: linear-gradient(90deg, #E68C17, #C20604);
+    /* active */
+    --gradient-accent-active: linear-gradient(90deg, #CC7B14, #A20504);
 
     --color-error: #ec1b09;
 
@@ -16,6 +22,8 @@
     --font-body: "Raleway", sans-serif;
 
     --border-radius: 8px;
+    /* knappar */
+    --radius-pill: 20px;
 
     /* spacing (gap, padding, margin) */
     /* ikon + text i knappar/kontaktkort */
@@ -102,8 +110,10 @@ a:hover {
 
 /* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
 :focus {
-    outline: var(--color-primary);
-    outline-offset: 2px;
+    outline: 3px solid #0B5FFF;
+    /* avståndet mellan elementet och outline */
+    outline-offset: 4px;
+    border-radius: var(--radius-pill);
 }
 
 /* navbar, scrollning sker på rootelementet */

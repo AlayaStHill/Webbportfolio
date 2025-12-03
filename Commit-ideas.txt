@@ -1,1 +1,3 @@
-Set up, Create, Define, Style, Add, Implement, 
+Set up, Create, Define, Style, Add, Implement, Enable
+
+add global radius-variable for buttons and linear-gradient-variable color-style
