@@ -1,4 +1,4 @@
-/* === root = settings för hela dokumentet. Globala css-variabler ===*/
+/* === root = settings för hela dokumentet. Globala css-variabler som ska återanvändas ===*/
 :root {
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
