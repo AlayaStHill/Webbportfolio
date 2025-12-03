@@ -28,5 +28,8 @@
     /* mellan stora sektioner */
     --space-xl: 2rem;
 
-    /* breakpoints (responsiv design) */
+    /* breakpoints i media queries (responsiv design) får vara i px?*/
+    --bp-mobile: 480px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1024px;
 }
