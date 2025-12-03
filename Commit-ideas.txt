@@ -1,2 +1,1 @@
-Add .gitignore
-create project start - !enter?
+Setup css component structure
