@@ -5,12 +5,15 @@
 
     --color-text-heading: #0B0909;
     --color-text-body: #1A1003;
+    --color-text-muted: #5C5C5C;
 
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
 
     --color-error: #ec1b09;
-
+    
+    --font-headings: "Poppins", sans-serif;
+    --font-body: "Raleway", sans-serif;
 
     --border-radius: 8px;
 
