@@ -84,3 +84,29 @@ button,
 input {
     font: inherit;
 }
+
+/* === Global basestyling === */
+
+
+/* Sätter hover underline för att särskilja länkarna enligt WCAG, eftersom jag stylat bort länk-utseendet */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Lite mjukare, diskret */
+    opacity: 0.8;
+}
+
+/* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
+:focus {
+    outline: var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* navbar, scrollning sker på rootelementet */
+html {
+    scroll-behavior: smooth;
+}
