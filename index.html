@@ -33,10 +33,10 @@
         </div>
     </header>
 
-    <!-- ====== Site-body: aside, main ======  -->
+    <!-- ====== SITE-BODY: aside, main ======  -->
     <div class="site-body">
 
-        <!-- ====== Sidebar ====== -->
+        <!-- ====== SIDEBAR ====== -->
         <aside class="sidebar">
 
             <div class="sidebar-profile-wrapper">
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <!-- Social-links-icons -->
+            <!-- ====== Social del ====== -->
             <div class="sidebar-social-wrapper">
                 <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank" rel="noopener noreferrer"
                     aria-label="Besök Alayas LinkedIn-profil">
@@ -59,7 +59,7 @@
                 </a>
             </div>
 
-            <!-- Kontakt-del -->
+            <!-- ====== Kontakt-del ====== -->
             <!-- ingen alt pga label och texten är det viktiga innehållet -->
             <div class="sidebar-contact-wrapper">
                 <div class="sidebar-contact-item">
@@ -85,25 +85,25 @@
                 </div>
             </div>
 
-            <!-- Väder-API -->
+            <!-- ====== Väder-API del ====== -->
             <div class="sidebar-weather"></div>
 
-            <!-- Skills -->
+            <!-- ====== Skills del ====== -->
             <div class="sidebar-skill-wrapper">
                 <h2 class="sidebar-skill-title">Tekniska färdigheter</h2>
                 <ul class="sidebar-skill-list">
                     <li>Skill</li>
                     <li>Skill</li>
-                    <li>Skill</li>
-                    <li>Skill</li>
+                    <li>agil arbetsmetodik</li>
+                    <li>Soft-skill ex analytisk, samarbetsinriktad, strukturerad, kommunikativ</li>
                 </ul>
             </div>
         </aside>
 
-        <!-- ====== Huvudinnehåll ====== -->
+        <!-- ====== HUVUDINNEHÅLL ====== -->
         <main class="site-main">
 
-            <!-- Hero -->
+            <!-- ====== Hero sektion ====== -->
             <section class="main-hero">
                 <div class="hero-wrapper">
                     <!-- div av layout skäl, kolumn -->
@@ -116,11 +116,11 @@
                     </div>
 
                     <!-- a eftersom avigering inom sidan. Är inte en action=knapp ex submit-->
-                    <div><a class="hero-cta-btn" href="#contact">Kontakt</a></div>
+                    <div><a class="btn-cta" href="#contact">Kontakt</a></div>
                 </div>
             </section>
 
-            <!-- Om mig -->
+            <!-- ====== Om mig sektion ====== -->
             <section class="main-about">
                 <div class="about-wrapper">
                     <h2 class="about-title">Om mig</h2>
@@ -131,6 +131,130 @@
                         bidra med strukturerade lösningar.</p>
                 </div>
             </section>
+
+            <!-- ====== Kunskap sektion ====== -->
+            <section class="main-skills">
+                <div class="skills-wrapper">
+
+                    <!-- Tekniska färdigheter -->
+                    <article class="skills-card">
+                        <h2 class="skills-title">Tekniska färdigheter</h2>
+                        <p>Jag arbetar inom .NET-ekosystemet och bygger tydlig, strukturerad och användarvänlig kod.
+                            Min kompetens sträcker sig från backendlogik i C# till grundläggande frontendutveckling.
+                        </p>
+
+                        <ul class="skills-list">
+                            <li>
+                                <h3>C# & .NET</h3>
+                                <p>Stark grund i objektorienterad programmering, applikationsstruktur och moderna
+                                    .NET-arbetsflöden.</p>
+                            </li>
+                            <li>
+                                <h3>HTML & CSS</h3>
+                                <p>Skapar responsiva layouts med fokus på tydlighet, semantik och tillgänglighet (WCAG).
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Javascript (grund)</h3>
+                                <p>Används för enklare logik, validering och interaktivitet i frontend.</p>
+                            </li>
+                            <li>
+                                <h3>Git & GitHub</h3>
+                                <p>Arbetar strukturerat med branching, commits, pull requests och versionshantering i
+                                    team.</p>
+                            </li>
+                            <li>
+                                <h3>xUnit</h3>
+                                <p>Skriver enhetstester för att säkerställa funktionalitet och förebygga regressionsfel.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Metodik & design -->
+                    <article class="skills-card">
+                        <h2 class="skills-title">Metodik & design</h2>
+                        <p class="skills-text">
+                            Jag arbetar analytiskt och metodiskt, med fokus på struktur,
+                            förståelse och långsiktig kvalitet.
+                            Min styrka ligger i att se både helhet och detaljer i systemdesign.
+                        </p>
+
+                        <ul class="skills-list">
+                            <li>
+                                <h3>Objektorienterad analys och design</h3>
+                                <p>Arbetar med att modellera problem, identifiera objekt, relationer och systemstruktur.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>UML</h3>
+                                <p>Erfarenhet av use case-, klass- och sekvensdiagram för att visualisera flöden och
+                                    systemlogik.</p>
+                            </li>
+                            <li>
+                                <h3>Designmönster</h3>
+                                <p>Grundläggande förståelse för vanliga mönster såsom Singleton och Repository.</p>
+                            </li>
+                            <li>
+                                <h3>Kravanalys</h3>
+                                <p>Bryter ner funktionella behov, analyserar problem och dokumenterar lösningar
+                                    strukturerat.</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ====== Portfölj sektion ====== -->
+            <section class="main-portfolio">
+                <div class="portfolio-wrapper">
+                    <article class="portfolio-card">
+                        <img src="assets/img/placeholder.jpg" alt="Bild på projekt" class="portfolio-img">
+
+                        <h3 class="portfolio-project-title">Produkthanteringssystem</h3>
+                        <p class="portfolio-description">Beskrivning projekt</p>
+
+                        <div class="portfolio-links">
+                            <a href="https://github.com/AlayaStHill/Assignment2_20251019.git" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub - Produkthanteringssystem"
+                                class="btn-github">GitHub</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-live"
+                                aria-label="Live demo - Produkthanteringssystem">Live demo</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="assets/img/placeholder.jpg" alt="Bild på projekt" class="portfolio-img">
+
+                        <h3 class="portfolio-project-title">Systementor Zoo</h3>
+                        <p class="portfolio-description">Beskrivning projekt</p>
+
+                        <div class="portfolio-links">
+                            <a href="https://github.com/AlayaStHill/SystementorZoo.git" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub - Systementor Zoo"
+                                class="btn-github">GitHub</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-live"
+                                aria-label="Live demo - Systementor Zoo">Live demo</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="assets/img/placeholder.jpg" alt="Bild på projekt" class="portfolio-img">
+
+                        <h3 class="portfolio-project-title">Projekt 3</h3>
+                        <p class="portfolio-description">Beskrivning projekt</p>
+
+                        <div class="portfolio-links">
+                            <a href="https://github.com/AlayaStHill/Assignment1_20251019.git" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub - placeholder"
+                                class="btn-github">GitHub</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-live"
+                                aria-label="Live demo -">Live demo</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
 
         </main>
     </div>
