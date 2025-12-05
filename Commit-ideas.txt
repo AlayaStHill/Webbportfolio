@@ -12,4 +12,4 @@ Add/define/introduce/create site-body structure with aside, main and aside top s
 Prepares styling for...
 
 Create structure for hero section. 
-Move cta-button from header to hero section. Change cta-button element from <button> to <a>> for correct navigation semantics.
+Add div to hero cta button to enable layout positioning.
