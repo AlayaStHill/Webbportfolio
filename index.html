@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <!-- ====== Header: logo, navbar, cta-btn ====== -->
+    <!-- ====== Header: logo, navbar cta-btn ====== -->
     <header class="site-header">
-        <div class="head-inner container">
+        <div class="header-inner container">
             <div class="logo" id="top"><a href="#top">Alaya St. Hill</a></div>
 
             <div class="header-right">
@@ -33,55 +33,75 @@
             </div>
         </div>
     </header>
+
     <!-- ====== Site-body: aside, main ======  -->
     <div class="site-body">
-        <aside class="sidebar">
-            <img src="assets/img/backgroundCv.png" alt="Bild på Alaya St. Hill">
 
-            <!-- ====== Aside ====== -->
-            <div class="aside-img-text">
-                <h2 class="aside-name">Alaya St. Hill</h2>
-                <p class="aside-role">Webbutvecklare .NET</p>
+        <!-- ====== Sidebar ====== -->
+        <aside class="sidebar">
+
+            <div class="sidebar-profile-wrapper">
+                <img src="assets/img/backgroundCv.png" alt="Bild på Alaya St. Hill">
+                <div class="sidebar-profile-text">
+                    <h2 class="sidebar-profile-name">Alaya St. Hill</h2>
+                    <p class="sidebar-profile-role">Webbutvecklare .NET</p>
+                </div>
             </div>
 
             <!-- Social-links-icons -->
-            <div class="social-icons">
+            <div class="sidebar-social-wrapper">
                 <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank" rel="noopener noreferrer"
                     aria-label="Besök Alayas LinkedIn-profil">
-                    <img src="assets/icons/linkedin.svg" alt="LinkedIn ikon">
+                    <img src="assets/icons/linkedin.svg" alt="">
                 </a>
                 <a href="https://github.com/AlayaStHill" target="_blank" rel="noopener noreferrer"
                     aria-label="Besök Alayas GitHub-profil">
-                    <img src="assets/icons/linkedin.svg" alt="GitHub ikon">
+                    <img src="assets/icons/github.svg" alt="">
                 </a>
             </div>
 
             <!-- Kontakt-del -->
             <!-- ingen alt pga label och texten är det viktiga innehållet -->
-            <div class="contact-item">
-                <img src="assets/icons/phone.svg" alt="">
-                <div class="contact-text">
-                    <p class="contact-label">Telefon</p>
-                    <p class="contact-value">+46 73 533 07 61</p>
+            <div class="sidebar-contact-wrapper">
+                <div class="sidebar-contact-item">
+                    <img src="assets/icons/phone.svg" alt="">
+                    <div class="sidebar-contact-text">
+                        <p class="sidebar-contactlabel">Telefon</p>
+                        <p class="sidebar-contact-value">+46 73 533 07 61</p>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-item">
-                <img src="assets/icons/email.svg" alt="">
-                <div class="contact-text">
-                    <p class="contact-label">E-post</p>
-                    <p class="contact-value">alaya.st.hill@gmail.com</p>
+                <div class="sidebar-contact-item">
+                    <img src="assets/icons/email.svg" alt="">
+                    <div class="sidebar-contact-text">
+                        <p class="sidebar-contact-label">E-post</p>
+                        <p class="sidebar-contact-value">alaya.st.hill@gmail.com</p>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-item">
-                <img src="assets/icons/location.svg" alt="">
-                <div class="contact-text">
-                    <p class="contact-label">Ort</p>
-                    <p class="contact-value">Sverige, Stockholm</p>
+                <div class="sidebar-contact-item">
+                    <img src="assets/icons/location.svg" alt="">
+                    <div class="sidebar-contact-text">
+                        <p class="sidebar-contact-label">Ort</p>
+                        <p class="sidebar-contact-value">Sverige, Stockholm</p>
+                    </div>
                 </div>
             </div>
 
+            <!-- Väder-API -->
+            <div class="sidebar-weather"></div>
+
+            <!-- Skills -->
+            <div class="sidebar-skill-wrapper">
+                <h2 class="sidebar-skill-title">Tekniska färdigheter</h2>
+                <ul class="sidebar-skill-list">
+                    <li>Skill</li>
+                    <li>Skill</li>
+                    <li>Skill</li>
+                    <li>Skill</li>
+                </ul>
+            </div>
         </aside>
 
+        <!-- ====== Huvudinnehåll ====== -->
         <main class="site-main">
 
         </main>

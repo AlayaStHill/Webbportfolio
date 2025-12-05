@@ -6,4 +6,9 @@ add global radius-variable for buttons and linear-gradient-variable color-style
 
 <!-- ======  ====== -->
 
-Add site-body structure with aside, main and aside top section.
+Add/define/introduce/create site-body structure with aside, main and aside top section.
+
+
+Prepares styling for...
+
+Add wrapper div for sidebar contact-section to facilitate css positioning. Add sidebar to element classnames for clarity.
