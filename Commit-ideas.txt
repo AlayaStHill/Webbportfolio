@@ -11,4 +11,5 @@ Add/define/introduce/create site-body structure with aside, main and aside top s
 
 Prepares styling for...
 
-Add wrapper div for sidebar contact-section to facilitate css positioning. Add sidebar to element classnames for clarity.
+Create structure for hero section. 
+Move cta-button from header to hero section. Change cta-button element from <button> to <a>> for correct navigation semantics.
