@@ -9,8 +9,9 @@ add global radius-variable for buttons and linear-gradient-variable color-style
 Add/define/introduce/create site-body structure with aside, main and aside top section.
 
 
-Prepares styling for...
 
-Create structure for hero section. 
-Add div to hero cta button to enable layout positioning.
+"Add global container class for content max-width and centering.
+Provides a reusable layout container to center and limit conent and add horizontal padding for readability."
 
+"Create structure for testimonial section.
+Add html structure for the testimonial section including quote and author. Wrap content in a testimonial-wrapper div to enable layout styling."
