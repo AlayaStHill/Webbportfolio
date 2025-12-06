@@ -17,7 +17,6 @@
     /* förälder = body = 100% av viewport */
     width: 100%;
     height: 5rem;
-    padding-block: 0.75rem;
     /* ligger längst upp i förhållande till viewport */
     top: 0;
     /* placeras i förhållande till viewpoertens hörn (pga fixed - säkerhetsinställning) */
@@ -25,14 +24,18 @@
     z-index: 1000;
 
     /* Bakgrund + skugga kan ligga här, definierar själva headerområdet, inte innehållet */
-    background-color: red;
+    background-color: var(--color-bg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
+    height: 100%;
+    max-width: 75rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
     display: flex;
     align-items: center;
-    background-color: blue;
 }
 
 .logo {
@@ -108,4 +111,11 @@
     display: grid;
     gap: 5rem;
     padding: 1rem;
+}
+
+.site-footer {
+    width: 100%;
+    padding-block: 0.75rem;
+    background-color: var(--color-bg);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.08);
 }
