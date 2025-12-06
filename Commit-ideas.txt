@@ -9,9 +9,13 @@ add global radius-variable for buttons and linear-gradient-variable color-style
 Add/define/introduce/create site-body structure with aside, main and aside top section.
 
 
-
+Senaste commits:
 "Add global container class for content max-width and centering.
 Provides a reusable layout container to center and limit conent and add horizontal padding for readability."
 
 "Create structure for testimonial section.
 Add html structure for the testimonial section including quote and author. Wrap content in a testimonial-wrapper div to enable layout styling."
+
+Add layout for header
+Structure logo to the right and navbar center-page. Remove redundant header-right wrapper.
+Add id to sections for navbar. 

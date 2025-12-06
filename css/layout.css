@@ -1,8 +1,49 @@
-/* Positionering av element */
+/* Positionering av element, global struktur */
 
-/* Content-bredd */
+/* Content-bredd (centreringslagret) */
 .container {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1rem;
+}
+
+/* Bara i komponentstyling man ej ska använda elementselektorer */
+body {
+    /* puttar ned aside och main från under headern */
+    padding-top: 5rem;
+}
+
+/* Fullbreddslagret */
+.site-header {
+    /* förälder = body = 100% av viewport */
+    width: 100%;
+    padding-block: 0.75rem;
+    position: fixed;
+    /* ligger längst upp i förhållande till viewport */
+    top: 0;
+    /* placeras i förhållande till viewpoertens hörn (pga fixed - säkerhetsinställning) */
+    left: 0;
+    z-index: 1000;
+
+    /* Bakgrund + skugga kan ligga här, definierar själva headerområdet, inte innehållet */
+    background-color: #ebf2fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.navbar {
+    margin-right: auto;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 1.5rem;
 }
