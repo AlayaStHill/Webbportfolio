@@ -7,18 +7,16 @@
     padding-inline: 1rem;
 }
 
-/* Bara i komponentstyling man ej ska använda elementselektorer */
-body {
-    /* puttar ned aside och main från under headern */
-    padding-top: 5rem;
-}
+
+/* ====== Header ============================== */
 
 /* Fullbreddslagret */
 .site-header {
+    position: fixed;
     /* förälder = body = 100% av viewport */
     width: 100%;
+    height: 5rem;
     padding-block: 0.75rem;
-    position: fixed;
     /* ligger längst upp i förhållande till viewport */
     top: 0;
     /* placeras i förhållande till viewpoertens hörn (pga fixed - säkerhetsinställning) */
@@ -26,7 +24,7 @@ body {
     z-index: 1000;
 
     /* Bakgrund + skugga kan ligga här, definierar själva headerområdet, inte innehållet */
-    background-color: #ebf2fa;
+    background-color: red;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
@@ -47,3 +45,37 @@ body {
     display: flex;
     gap: 1.5rem;
 }
+
+
+/* ====== Sidebar ================================================ */
+
+.sidebar {
+    position: fixed;
+    width: 20rem;
+    /* fyller resten av skärmen */
+    height: calc(100vh - 5rem);
+    left: 0;
+    /* puttar ned sidebar precis under header */
+    top: 5rem;
+    /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
+    overflow-y: auto;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+    background-color: aqua;
+}
+
+.sidebar-wrapper {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sidebar-section {
+    padding-inline: 0.75rem;
+}
+
+.sidebar-social-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* main margin left = 20rem, och margin-top: 5rem; lika stor som sidebar för att inte hamna inunder */

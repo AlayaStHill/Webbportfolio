@@ -37,69 +37,74 @@
     </header>
 
     <!-- ====== SITE-BODY: aside, main ======  -->
+    <!-- har ingen layoutroll, för responsivitet -->
     <div class="site-body">
 
         <!-- ====== SIDEBAR ====== -->
         <aside class="sidebar">
+            <div class="sidebar-wrapper">
 
-            <div class="sidebar-profile-wrapper">
-                <img src="assets/img/backgroundCv.png" alt="Bild på Alaya St. Hill">
-                <div class="sidebar-profile-text">
-                    <h2 class="sidebar-profile-name">Alaya St. Hill</h2>
-                    <p class="sidebar-profile-role">Webbutvecklare .NET</p>
-                </div>
-            </div>
-
-            <!-- ====== Social del ====== -->
-            <div class="sidebar-social-wrapper">
-                <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank" rel="noopener noreferrer"
-                    aria-label="Besök Alayas LinkedIn-profil">
-                    <img src="assets/icons/linkedin.svg" alt="">
-                </a>
-                <a href="https://github.com/AlayaStHill" target="_blank" rel="noopener noreferrer"
-                    aria-label="Besök Alayas GitHub-profil">
-                    <img src="assets/icons/github.svg" alt="">
-                </a>
-            </div>
-
-            <!-- ====== Kontakt-del ====== -->
-            <!-- ingen alt pga label och texten är det viktiga innehållet -->
-            <div class="sidebar-contact-wrapper">
-                <div class="sidebar-contact-item">
-                    <img src="assets/icons/phone.svg" alt="">
-                    <div class="sidebar-contact-text">
-                        <p class="sidebar-contactlabel">Telefon</p>
-                        <p class="sidebar-contact-value">+46 73 533 07 61</p>
+                <div class=" sidebar-section sidebar-profile-wrapper">
+                    <div class="sidebar-profile-img">
+                        <img src="assets/img/backgroundCv.png" alt="Bild på Alaya St. Hill">
+                    </div>
+                    <div class="sidebar-profile-text">
+                        <h2 class="sidebar-profile-name">Alaya St. Hill</h2>
+                        <p class="sidebar-profile-role">Webbutvecklare .NET</p>
                     </div>
                 </div>
-                <div class="sidebar-contact-item">
-                    <img src="assets/icons/email.svg" alt="">
-                    <div class="sidebar-contact-text">
-                        <p class="sidebar-contact-label">E-post</p>
-                        <p class="sidebar-contact-value">alaya.st.hill@gmail.com</p>
+
+                <!-- ====== Social del ====== -->
+                <div class="sidebar-section sidebar-social-wrapper">
+                    <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank"
+                        rel="noopener noreferrer" aria-label="Besök Alayas LinkedIn-profil">
+                        <img src="assets/icons/linkedin.svg" alt="">
+                    </a>
+                    <a href="https://github.com/AlayaStHill" target="_blank" rel="noopener noreferrer"
+                        aria-label="Besök Alayas GitHub-profil">
+                        <img src="assets/icons/github.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- ====== Kontakt-del ====== -->
+                <!-- ingen alt pga label och texten är det viktiga innehållet -->
+                <div class="sidebar-section sidebar-contact-wrapper">
+                    <div class="sidebar-contact-item">
+                        <img src="assets/icons/phone.svg" alt="">
+                        <div class="sidebar-contact-text">
+                            <p class="sidebar-contactlabel">Telefon</p>
+                            <p class="sidebar-contact-value">+46 73 533 07 61</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-contact-item">
+                        <img src="assets/icons/email.svg" alt="">
+                        <div class="sidebar-contact-text">
+                            <p class="sidebar-contact-label">E-post</p>
+                            <p class="sidebar-contact-value">alaya.st.hill@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-contact-item">
+                        <img src="assets/icons/location.svg" alt="">
+                        <div class="sidebar-contact-text">
+                            <p class="sidebar-contact-label">Ort</p>
+                            <p class="sidebar-contact-value">Sverige, Stockholm</p>
+                        </div>
                     </div>
                 </div>
-                <div class="sidebar-contact-item">
-                    <img src="assets/icons/location.svg" alt="">
-                    <div class="sidebar-contact-text">
-                        <p class="sidebar-contact-label">Ort</p>
-                        <p class="sidebar-contact-value">Sverige, Stockholm</p>
-                    </div>
+
+                <!-- ====== Väder-API del ====== -->
+                <div class="sidebar-section sidebar-weather">Väder-api</div>
+
+                <!-- ====== Skills del ====== -->
+                <div class="sidebar-section sidebar-skill-wrapper">
+                    <h2 class="sidebar-skill-title">Tekniska färdigheter</h2>
+                    <ul class="sidebar-skill-list">
+                        <li>Skill</li>
+                        <li>Skill</li>
+                        <li>agil arbetsmetodik</li>
+                        <li>Soft-skill ex analytisk, samarbetsinriktad, strukturerad, kommunikativ</li>
+                    </ul>
                 </div>
-            </div>
-
-            <!-- ====== Väder-API del ====== -->
-            <div class="sidebar-weather"></div>
-
-            <!-- ====== Skills del ====== -->
-            <div class="sidebar-skill-wrapper">
-                <h2 class="sidebar-skill-title">Tekniska färdigheter</h2>
-                <ul class="sidebar-skill-list">
-                    <li>Skill</li>
-                    <li>Skill</li>
-                    <li>agil arbetsmetodik</li>
-                    <li>Soft-skill ex analytisk, samarbetsinriktad, strukturerad, kommunikativ</li>
-                </ul>
             </div>
         </aside>
 

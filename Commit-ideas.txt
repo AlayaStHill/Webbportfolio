@@ -16,6 +16,5 @@ Provides a reusable layout container to center and limit conent and add horizont
 "Create structure for testimonial section.
 Add html structure for the testimonial section including quote and author. Wrap content in a testimonial-wrapper div to enable layout styling."
 
-Add layout for header
-Structure logo to the right and navbar center-page. Remove redundant header-right wrapper.
-Add id to sections for navbar. 
+Add layout for sidebar
+Restrict sidebar image with wrapper div to conform to sidebar width. Create sidebar-wrapper div to enable spacing inside sidebar
