@@ -1,4 +1,5 @@
-/* Positionering av element, global struktur */
+/* Positionering av element, sidans struktur (inte komponenternas interna layout) */
+/* SOC: ytterbox -> wrapper -> sektion -> container -> innehåll */
 
 /* Content-bredd (centreringslagret) */
 .container {
@@ -31,6 +32,7 @@
 .header-inner {
     display: flex;
     align-items: center;
+    background-color: blue;
 }
 
 .logo {
@@ -46,17 +48,32 @@
     gap: 1.5rem;
 }
 
+/* ====== Site-body ========================================== */
+.site-body {
+    display: flex;
+    justify-content: center;
+    /* Barnen börjar vid toppen av site-body */
+    align-items: flex-start;
+    min-height: calc(100vh - 5rem);
+    /* barnen börjar precis vid headerns slut */
+    padding-top: 5rem;
+    gap: 2rem;
+
+}
+
 
 /* ====== Sidebar ================================================ */
 
 .sidebar {
-    position: fixed;
+    /* relativ till viewport */
+    position: sticky;
+    /* styr när sticky aktiveras, 5rem (=offset) från viewport top (headerns slut) */
+    top: 5rem;
+    align-self: flex-start;
     width: 20rem;
     /* fyller resten av skärmen */
     height: calc(100vh - 5rem);
-    left: 0;
-    /* puttar ned sidebar precis under header */
-    top: 5rem;
+
     /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
     overflow-y: auto;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
@@ -78,4 +95,17 @@
     gap: 1.5rem;
 }
 
-/* main margin left = 20rem, och margin-top: 5rem; lika stor som sidebar för att inte hamna inunder */
+/* Yttre layoutbox - spacing i förhållande till omgivningen */
+.site-main {
+    /* ta upp all tillgänglig bredd */
+    flex: 1;
+    /* men inte bredare än såhär */
+    max-width: 50rem;
+}
+
+/* Inre layoutstruktur - hur sektionerna organiseras */
+.site-main-wrapper {
+    display: grid;
+    gap: 5rem;
+    padding: 1rem;
+}
