@@ -1,0 +1,121 @@
+/* Positionering av element, sidans struktur (inte komponenternas interna layout) */
+/* SOC: ytterbox -> wrapper -> sektion -> container -> innehåll */
+
+/* Content-bredd (centreringslagret) */
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+
+/* ====== Header ============================== */
+
+/* Fullbreddslagret */
+.site-header {
+    position: fixed;
+    /* förälder = body = 100% av viewport */
+    width: 100%;
+    height: 5rem;
+    /* ligger längst upp i förhållande till viewport */
+    top: 0;
+    /* placeras i förhållande till viewpoertens hörn (pga fixed - säkerhetsinställning) */
+    left: 0;
+    z-index: 1000;
+
+    /* Bakgrund + skugga kan ligga här, definierar själva headerområdet, inte innehållet */
+    background-color: var(--color-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+    height: 100%;
+    max-width: 75rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.navbar {
+    margin-right: auto;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* ====== Site-body ========================================== */
+.site-body {
+    display: flex;
+    justify-content: center;
+    /* Barnen börjar vid toppen av site-body */
+    align-items: flex-start;
+    min-height: calc(100vh - 5rem);
+    /* barnen börjar precis vid headerns slut */
+    padding-top: 5rem;
+    gap: 2rem;
+
+}
+
+
+/* ====== Sidebar ================================================ */
+
+.sidebar {
+    /* relativ till viewport */
+    position: sticky;
+    /* styr när sticky aktiveras, 5rem (=offset) från viewport top (headerns slut) */
+    top: 5rem;
+    align-self: flex-start;
+    width: 20rem;
+    /* fyller resten av skärmen */
+    height: calc(100vh - 5rem);
+
+    /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
+    overflow-y: auto;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+    background-color: aqua;
+}
+
+.sidebar-wrapper {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sidebar-section {
+    padding-inline: 0.75rem;
+}
+
+.sidebar-social-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Yttre layoutbox - spacing i förhållande till omgivningen */
+.site-main {
+    /* ta upp all tillgänglig bredd */
+    flex: 1;
+    /* men inte bredare än såhär */
+    max-width: 50rem;
+}
+
+/* Inre layoutstruktur - hur sektionerna organiseras */
+.site-main-wrapper {
+    display: grid;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.site-footer {
+    width: 100%;
+    padding-block: 0.75rem;
+    background-color: var(--color-bg);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.08);
+}

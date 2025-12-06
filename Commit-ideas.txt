@@ -1,4 +1,4 @@
-Set up, Create, Define, Style, Add, Implement, Enable/Support, Introduce, 
+Set up, Create, Define, Style, Add, Implement, Enable/Support, Introduce, Provide
 
 add global radius-variable for buttons and linear-gradient-variable color-style
 
@@ -9,7 +9,13 @@ add global radius-variable for buttons and linear-gradient-variable color-style
 Add/define/introduce/create site-body structure with aside, main and aside top section.
 
 
-Prepares styling for...
+Senaste commits:
+"Add global container class for content max-width and centering.
+Provides a reusable layout container to center and limit conent and add horizontal padding for readability."
 
-Create structure for hero section. 
-Add div to hero cta button to enable layout positioning.
+"Create structure for testimonial section.
+Add html structure for the testimonial section including quote and author. Wrap content in a testimonial-wrapper div to enable layout styling."
+
+Add layout for main and update sidebar
+Add site-main-wrapper div for inner structure to keep site-main strictly for outer layout.
+Change sidebar position from fixed to sticky to support centered ite-body layout.
