@@ -19,3 +19,5 @@ Add html structure for the testimonial section including quote and author. Wrap 
 Add layout for main and update sidebar
 Add site-main-wrapper div for inner structure to keep site-main strictly for outer layout.
 Change sidebar position from fixed to sticky to support centered ite-body layout.
+
+remove focus setting fråm base as a element styling may vary throughout the page.

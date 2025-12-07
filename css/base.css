@@ -1,5 +1,6 @@
 /* === root = settings för hela dokumentet. Globala css-variabler som ska återanvändas ===*/
 :root {
+    /* var(--namn-) */
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
 
@@ -9,12 +10,14 @@
 
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
+
+    --gradient-accent-header: linear-gradient(90deg, #DD7E00 0%,   #E46E00 50%, #ec1b09 100%);
     /* default */
-    --gradient-accent-default: linear-gradient(90deg, #FF9C1A, #E80505);
+    --gradient-accent-default: linear-gradient(90deg, #D8830F, #E80505);
     /* hover */
-    --gradient-accent-hover: linear-gradient(90deg, #E68C17, #C20604);
+    --gradient-accent-hover: linear-gradient(90deg, #CC7B14, #C20604);
     /* active */
-    --gradient-accent-active: linear-gradient(90deg, #CC7B14, #A20504);
+    --gradient-accent-active: linear-gradient(90deg, #B46A12, #A20504);
 
     --color-error: #ec1b09;
 
@@ -69,6 +72,7 @@ h3,
 p {
     margin: 0;
     padding: 0;
+    line-height: 1.3;
 }
 
 /* 100%: bilder anpassar sig till containern (blir aldrig större än), responsivitet. I utbildningsreset, inte branch-standard ?*/
@@ -104,16 +108,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    /* Lite mjukare, diskret */
-    opacity: 0.8;
-}
-
-/* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
-:focus {
-    outline: 3px solid #0B5FFF;
-    /* avståndet mellan elementet och outline */
-    outline-offset: 4px;
-    border-radius: var(--radius-pill);
+    text-underline-offset: 0.15rem;
 }
 
 /* navbar, scrollning sker på rootelementet */
