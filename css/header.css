@@ -1,0 +1,58 @@
+.logo {
+    /* cursive fallback */
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.logo-firstname {
+    color: var(--color-text-heading)
+}
+
+.logo-lastname {
+    /* lägger gradienten bakom texten */
+    background: var(--gradient-accent-header);
+    /* klipper gradienten till textens form */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* gör att gradienten syns genom texten */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    padding-right: 0.2rem;
+}
+
+.navbar {
+    color: var(--color-text-heading);
+    font-family: var(--font-headings);
+}
+
+.navbar-list a {
+    /* styr klickytan och fokusbeteendet, a är annars inline */
+    display: block;
+    padding: 0rem 0.25rem;
+
+    font-weight: 500;
+    font-size: 1rem;
+    /* Ökar läsbarhet */
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease, text-underline-offset 0.2s ease;
+}
+
+/* Överstyr base */
+.navbar-list a:hover {
+    background: var(--gradient-accent-header);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+/* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
+.navbar-list a:focus {
+    outline: 3px solid #0B5FFF;
+    /* avståndet mellan elementet och outline */
+    outline-offset: 4px;
+    border-radius: var(--radius-pill);
+}
