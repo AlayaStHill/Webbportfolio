@@ -5,7 +5,7 @@
     --color-surface: #f2f5f9;
     --color-fill: #FFF;
 
-    --color-text-heading: #0B0909;
+    --color-text-heading: #2e2e2e;
     --color-text-body: #1A1003;
     --color-text-muted: #5C5C5C;
     --color-text-medium: #2e2e2e;
@@ -59,12 +59,19 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, sans-serif;
+    font-family: var(--font-body), system-ui, sans-serif;
     /* WCAG */
     line-height: 1.5;
     /* Fallback */
     background-color: #ebf2fa;
-    color: #0B0909;
+    color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-headings);
+    color: var(--color-text-heading);
 }
 
 h1,

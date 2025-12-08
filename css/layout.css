@@ -92,11 +92,6 @@
     padding: 1rem;
 }
 
-.sidebar-social-wrapper {
-    display: flex;
-    gap: 1.5rem;
-}
-
 /* Yttre layoutbox - spacing i förhållande till omgivningen */
 .site-main {
     /* ta upp all tillgänglig bredd */

@@ -26,3 +26,10 @@ Refactor: add section tag to the different thematic groups inside aside for corr
 
 Add sidebar weather-section layout and refactor sidebar structure by replacing non-semantic div with <section<z.
 Add weather integration using OpenWeatherMap, including dynamic icon, temperature and feels-like values. 
+
+Add sidebar profile layout
+
+Style profile image and text. Add text color to base body for global default. Add heading color to base as global default.
+Style profile image and profile text.
+Add global default text color to base body.
+Add global heading color to base CSS for consistent typography.
