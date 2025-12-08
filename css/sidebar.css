@@ -33,23 +33,56 @@
 }
 
 .sidebar-profile-text {
-
     text-align: center;
 }
 
-.sidebar-profile-role {
-    color: var(--color-text-muted);
-}
-
-.sidebar-profile-name {
+.sidebar-profile-text h2 {
     font-family: var(--font-body);
     margin-bottom: 0.5rem;
-    ;
+}
+
+.sidebar-profile-text p {
+    color: var(--color-text-muted);
 }
 
 .sidebar-social-wrapper {
     display: flex;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* ====== Social del ===================================== */
+.sidebar-social-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+    border-radius: 0.75rem;
+    padding: 0.4rem;
+
+    background-color: var(--color-surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar-social-wrapper a:hover {
+    transform: translateY(-2px);
+    background-color: #e1e6ee;
+}
+
+.sidebar-social-wrapper a:active {
+     background-color: #d2d9e3; 
+    transform: translateY(0);
+}
+
+.sidebar-social-wrapper a img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
 
 
