@@ -1,0 +1,40 @@
+.sidebar {
+    background-color: var(--color-fill);
+    border-radius: 12px;
+}
+
+.sidebar-section {
+    padding-inline: 0.75rem;
+}
+
+.sidebar-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--color-surface);
+    padding-block: 1.5rem;
+    color: var(--color-text-medium);
+}
+
+#weather-location {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#weather-temp {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#weather-feels {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.weather-img-wrapper {
+    border-radius: 50%;
+    background-color: rgba(172, 174, 174, 0.404);
+    
+}

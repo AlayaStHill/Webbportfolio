@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 
 <body>
@@ -51,7 +52,8 @@
         <aside class="sidebar">
             <div class="sidebar-wrapper">
 
-                <div class=" sidebar-section sidebar-profile-wrapper">
+                    <!-- ====== Profil ====== -->
+                <section class=" sidebar-section sidebar-profile-wrapper">
                     <div class="sidebar-profile-img">
                         <img src="assets/img/backgroundCv.png" alt="Bild på Alaya St. Hill">
                     </div>
@@ -59,10 +61,10 @@
                         <h2 class="sidebar-profile-name">Alaya St. Hill</h2>
                         <p class="sidebar-profile-role">Webbutvecklare .NET</p>
                     </div>
-                </div>
+                </section>
 
                 <!-- ====== Social del ====== -->
-                <div class="sidebar-section sidebar-social-wrapper">
+                <section class="sidebar-section sidebar-social-wrapper">
                     <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank"
                         rel="noopener noreferrer" aria-label="Besök Alayas LinkedIn-profil">
                         <img src="assets/icons/linkedin.svg" alt="">
@@ -71,11 +73,11 @@
                         aria-label="Besök Alayas GitHub-profil">
                         <img src="assets/icons/github.svg" alt="">
                     </a>
-                </div>
+                </section>
 
                 <!-- ====== Kontakt-del ====== -->
                 <!-- ingen alt pga label och texten är det viktiga innehållet -->
-                <div class="sidebar-section sidebar-contact-wrapper">
+                <section class="sidebar-section sidebar-contact-wrapper">
                     <div class="sidebar-contact-item">
                         <img src="assets/icons/phone.svg" alt="">
                         <div class="sidebar-contact-text">
@@ -97,13 +99,20 @@
                             <p class="sidebar-contact-value">Sverige, Stockholm</p>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- ====== Väder-API del ====== -->
-                <div class="sidebar-section sidebar-weather">Väder-api</div>
+                <section class="sidebar-section sidebar-weather card " id="weather-info">
+                    <div class="weather-img-wrapper">
+                    <img id="weather-icon" src="default-weather.png" alt="Väderikon">
+                    </div>
+                    <p id="weather-location"></p>
+                    <p id="weather-temp"></p>
+                    <p id="weather-feels"></p>       
+                </section>
 
                 <!-- ====== Skills del ====== -->
-                <div class="sidebar-section sidebar-skill-wrapper">
+                <section class="sidebar-section sidebar-skill-wrapper">
                     <h2 class="sidebar-skill-title">Tekniska färdigheter</h2>
                     <ul class="sidebar-skill-list">
                         <li>Skill</li>
@@ -111,7 +120,7 @@
                         <li>agil arbetsmetodik</li>
                         <li>Soft-skill ex analytisk, samarbetsinriktad, strukturerad, kommunikativ</li>
                     </ul>
-                </div>
+                </section>
             </div>
         </aside>
 
@@ -379,4 +388,5 @@
             </div>
         </div>
     </footer>
+    <script src="weather.js"></script>
 </body>

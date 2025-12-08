@@ -3,15 +3,17 @@
     /* var(--namn-) */
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
+    --color-fill: #FFF;
 
     --color-text-heading: #0B0909;
     --color-text-body: #1A1003;
     --color-text-muted: #5C5C5C;
+    --color-text-medium: #2e2e2e;
 
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
 
-    --gradient-accent-header: linear-gradient(90deg, #DD7E00 0%,   #E46E00 50%, #ec1b09 100%);
+    --gradient-accent-header: linear-gradient(90deg, #DD7E00 0%, #E46E00 50%, #ec1b09 100%);
     /* default */
     --gradient-accent-default: linear-gradient(90deg, #D8830F, #E80505);
     /* hover */
@@ -24,7 +26,6 @@
     --font-headings: "Poppins", sans-serif;
     --font-body: "Raleway", sans-serif;
 
-    --border-radius: 8px;
     /* knappar */
     --radius-pill: 20px;
 

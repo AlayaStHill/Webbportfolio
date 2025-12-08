@@ -21,3 +21,8 @@ Add site-main-wrapper div for inner structure to keep site-main strictly for out
 Change sidebar position from fixed to sticky to support centered ite-body layout.
 
 remove focus setting fråm base as a element styling may vary throughout the page.
+
+Refactor: add section tag to the different thematic groups inside aside for correct semantics.
+
+Add sidebar weather-section layout and refactor sidebar structure by replacing non-semantic div with <section<z.
+Add weather integration using OpenWeatherMap, including dynamic icon, temperature and feels-like values. 

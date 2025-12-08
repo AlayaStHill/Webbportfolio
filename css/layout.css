@@ -8,6 +8,10 @@
     padding-inline: 1rem;
 }
 
+.card {
+    background-color: var(--color-bg);
+    border-radius: var(--radius-pill);
+}
 
 /* ====== Header ============================== */
 
@@ -66,12 +70,11 @@
 
 
 /* ====== Sidebar ================================================ */
-
 .sidebar {
     /* relativ till viewport */
     position: sticky;
     /* styr när sticky aktiveras, 5rem (=offset) från viewport top (headerns slut) */
-    top: 5rem;
+    top: 8rem;
     align-self: flex-start;
     width: 20rem;
     /* fyller resten av skärmen */
@@ -87,10 +90,6 @@
     display: grid;
     gap: 2rem;
     padding: 1rem;
-}
-
-.sidebar-section {
-    padding-inline: 0.75rem;
 }
 
 .sidebar-social-wrapper {
