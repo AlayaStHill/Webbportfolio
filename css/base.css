@@ -2,8 +2,9 @@
 :root {
     /* var(--namn-) */
     --color-bg: #ebf2fa;
-    --color-surface: #f2f5f9;
-    --color-fill: #FFF;
+    --color-surface-1: #f2f5f9;
+    --color-surface-2: #FFF;
+    --color-surface-3: #FFEBD1;
 
     --color-text-heading: #2e2e2e;
     --color-text-body: #1A1003;

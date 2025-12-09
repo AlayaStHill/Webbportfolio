@@ -9,10 +9,20 @@
 }
 
 .card {
-    background-color: var(--color-fill);
     border-radius: var(--radius-pill);
     padding: 2rem;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+    background-color: var(--color-surface-2);
+}
+
+.heading {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.0625rem;
 }
 
 /* ====== Header ============================== */

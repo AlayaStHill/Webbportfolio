@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main-skill.css">
+
 </head>
 
 <body>
@@ -189,11 +191,11 @@
                 </section>
 
                 <!-- ====== Om mig sektion ====== -->
-                <section class="main-about card" id="about-text">
+                <section class="main-about" id="about-text">
                     <div class="container">
-                        <div class="about-wrapper">
-                            <div class="about-title">
-                                <h2 class="about-title">Om mig </h2>
+                        <div class="about-wrapper card">
+                            <div class="heading">
+                                <h2 class="about-title">Om mig</h2>
                                 <img src="assets/icons/Line.svg" />
 
                             </div>
@@ -216,79 +218,86 @@
                         <div class="skills-wrapper">
 
                             <!-- Tekniska färdigheter -->
-                            <article class="skills-card">
-                                <h2 class="skills-title">Tekniska färdigheter</h2>
-                                <p>Jag arbetar inom .NET-ekosystemet och bygger tydlig, strukturerad och
+                            <article class="skills-section card">
+                                <div class="heading">
+                                    <h2 class="skills-title">Tekniska färdigheter</h2>
+                                    <img src="assets/icons/Line.svg" />
+                                </div>
+                                <!-- <p>Jag arbetar inom .NET-ekosystemet och bygger tydlig, strukturerad och
                                     användarvänlig
                                     kod.
                                     Min kompetens sträcker sig från backendlogik i C# till grundläggande
                                     frontendutveckling.
-                                </p>
+                                </p> -->
 
                                 <ul class="skills-list">
-                                    <li>
+                                    <li class="skill-card skill-card-orange ">
                                         <h3>C# & .NET</h3>
                                         <p>Stark grund i objektorienterad programmering, applikationsstruktur och
                                             moderna
                                             .NET-arbetsflöden.</p>
                                     </li>
-                                    <li>
+                                    <li class="skill-card">
                                         <h3>HTML & CSS</h3>
                                         <p>Skapar responsiva layouts med fokus på tydlighet, semantik och
                                             tillgänglighet
                                             (WCAG).
                                         </p>
                                     </li>
-                                    <li>
+                                    <li class="skill-card">
                                         <h3>Javascript (grund)</h3>
                                         <p>Används för enklare logik, validering och interaktivitet i frontend.</p>
                                     </li>
-                                    <li>
+
+                                    <li class="skill-card skill-card-orange">
+                                        <h3>xUnit</h3>
+                                        <p>Skriver enhetstester för att säkerställa funktionalitet och förebygga
+                                            regressionsfel.
+                                        </p>
+                                    </li>
+                                    <li class="skill-card skill-card-center">
                                         <h3>Git & GitHub</h3>
                                         <p>Arbetar strukturerat med branching, commits, pull requests och
                                             versionshantering
                                             i
                                             team.</p>
                                     </li>
-                                    <li>
-                                        <h3>xUnit</h3>
-                                        <p>Skriver enhetstester för att säkerställa funktionalitet och förebygga
-                                            regressionsfel.
-                                        </p>
-                                    </li>
                                 </ul>
                             </article>
 
                             <!-- Metodik & design -->
-                            <article class="skills-card">
-                                <h2 class="skills-title">Metodik & design</h2>
-                                <p class="skills-text">
+                            <article class="skills-section card">
+                                <div class="heading">
+                                    <h2 class="skills-title">Metodik & design</h2>
+                                    <img src="assets/icons/Line.svg" />
+                                </div>
+                                <!-- <p class="skills-text">
                                     Jag arbetar analytiskt och metodiskt, med fokus på struktur,
                                     förståelse och långsiktig kvalitet.
                                     Min styrka ligger i att se både helhet och detaljer i systemdesign.
-                                </p>
+                                </p> -->
 
                                 <ul class="skills-list">
-                                    <li>
+                                    <li class="skill-card">
                                         <h3>Objektorienterad analys och design</h3>
                                         <p>Arbetar med att modellera problem, identifiera objekt, relationer och
                                             systemstruktur.
                                         </p>
                                     </li>
-                                    <li>
+                                    <li class="skill-card skill-card-orange">
                                         <h3>UML</h3>
                                         <p>Erfarenhet av use case-, klass- och sekvensdiagram för att visualisera
                                             flöden
                                             och
                                             systemlogik.</p>
                                     </li>
-                                    <li>
+                                    <li class="skill-card skill-card-orange">
                                         <h3>Designmönster</h3>
                                         <p>Grundläggande förståelse för vanliga mönster såsom Singleton och
                                             Repository.
                                         </p>
                                     </li>
-                                    <li>
+                                    <li class="skill-card">
                                         <h3>Kravanalys</h3>
                                         <p>Bryter ner funktionella behov, analyserar problem och dokumenterar
                                             lösningar

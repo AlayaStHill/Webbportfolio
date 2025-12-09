@@ -1,0 +1,42 @@
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skills-section {}
+
+.skills-title {
+    padding-bottom: 1rem;
+}
+
+
+.skills-list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.skill-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.skill-card-orange {
+    background-color: var(--color-surface-3);
+}
+
+.skill-card-center {
+    /* sträcker sig 2 kolumner */
+    grid-column: span 2;
+    justify-self: center;
+    /* kortet blir inte för brett */
+}
+
+

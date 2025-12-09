@@ -2,6 +2,12 @@ ATT GÖRA:
 Align logo med sidebar
 Gör så att sidebar inte behöver skrollas
 gradient hero line
+skapa button.c layout
+
+ikoner för skills-section
+
+align cards main
+ fixa headings
 
 <!-- ======  ====== -->
 
