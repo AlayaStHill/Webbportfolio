@@ -1,8 +1,6 @@
-Set up, Create, Define, Style, Add, Implement, Enable/Support, Introduce, Provide
-
-add global radius-variable for buttons and linear-gradient-variable color-style
-
-
+ATT GÖRA:
+Align logo med sidebar
+Gör så att sidebar inte behöver skrollas
 
 <!-- ======  ====== -->
 
