@@ -13,13 +13,13 @@
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
 
-    --gradient-accent-header: linear-gradient(90deg, #DD7E00 0%, #E46E00 50%, #ec1b09 100%);
-    /* default */
-    --gradient-accent-default: linear-gradient(90deg, #D8830F, #E80505);
+    --gradient-accent-default: linear-gradient(90deg, #DD7E00 0%, #E46E00 50%, #ec1b09 100%);
+    /* focus */
+    --gradient-accent-focus: linear-gradient(90deg, #F4991A 0%, #F07E1A 50%, #F33D22 100%);
     /* hover */
-    --gradient-accent-hover: linear-gradient(90deg, #CC7B14, #C20604);
+    --gradient-accent-hover: linear-gradient(90deg, #E88C00 0%, #F07800 50%, #F02D0F 100%);
     /* active */
-    --gradient-accent-active: linear-gradient(90deg, #B46A12, #A20504);
+    --gradient-accent-active: linear-gradient(90deg, #C96A00 0%, #DA5F00 50%, #D31A08 100%);
 
     --color-error: #ec1b09;
 

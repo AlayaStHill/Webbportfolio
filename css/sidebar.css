@@ -57,7 +57,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.4rem;
@@ -75,8 +74,14 @@
 }
 
 .sidebar-social-wrapper a:active {
-     background-color: #d2d9e3; 
+    background-color: #d2d9e3;
     transform: translateY(0);
+}
+
+.sidebar-social-wrapper a:focus-visible {
+    outline: 3px solid #0B5FFF;
+    outline-offset: 3px;
+    background-color: #e1e6ee;
 }
 
 .sidebar-social-wrapper a img {
@@ -84,6 +89,101 @@
     height: 80%;
     object-fit: contain;
 }
+
+
+/* ====== Kontakt del ============================= */
+.sidebar-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-surface);
+}
+
+.sidebar-contact-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-contact-item {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    align-items: start;
+    column-gap: 1rem;
+    border-bottom: 1px solid var(--color-border, #E0E6ED);
+    padding-block: 1rem;
+}
+
+.sidebar-contact-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #F2A900;
+    fill: currentColor;
+}
+
+.sidebar-contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 0.9rem;
+}
+
+.sidebar-contact-label {
+    color: var(--color-text-muted);
+}
+
+.sidebar-contact-value {
+    font-weight: 500;
+}
+
+.download-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn {
+    display: flex;
+    max-width: 11rem;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-pill);
+    border: none;
+    background: var(--gradient-accent-default);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    /* texten radbryts inte */
+    white-space: nowrap;
+    font-size: 0.8rem;
+    transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.download-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.download-btn:focus-visible {
+    outline: 3px solid #0B5FFF;
+    outline-offset: 3px;
+    filter: brightness(1.07);
+}
+
+.download-btn:hover {
+    background: var(--gradient-accent-hover);
+    transform: translateY(-1px);
+}
+
+.download-btn:active {
+    background: var(--gradient-accent-active);
+    transform: translateY(1px);
+}
+
+
 
 
 /* ====== Väder-api ===================================== */

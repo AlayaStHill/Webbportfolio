@@ -75,6 +75,7 @@
     position: sticky;
     /* styr när sticky aktiveras, 5rem (=offset) från viewport top (headerns slut) */
     top: 8rem;
+    margin-bottom: 3rem;
     align-self: flex-start;
     width: 20rem;
     /* fyller resten av skärmen */
@@ -83,7 +84,6 @@
     /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
     overflow-y: auto;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
-    background-color: aqua;
 }
 
 .sidebar-wrapper {
