@@ -11,7 +11,7 @@
 .card {
     background-color: var(--color-fill);
     border-radius: var(--radius-pill);
-    padding: 1.5rem;
+    padding: 2rem;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
 }
 
