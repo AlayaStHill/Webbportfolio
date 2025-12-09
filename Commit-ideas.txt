@@ -1,6 +1,7 @@
 ATT GÖRA:
 Align logo med sidebar
 Gör så att sidebar inte behöver skrollas
+gradient hero line
 
 <!-- ======  ====== -->
 
