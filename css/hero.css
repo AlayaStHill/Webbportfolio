@@ -38,6 +38,7 @@ width: 100%;
 }
 
 .btn-cta {
+    display: inline-block;
     max-width: 7rem;
     padding: 0.7rem 1rem;
     border-radius: var(--radius-pill);
