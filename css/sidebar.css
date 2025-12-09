@@ -1,0 +1,257 @@
+.sidebar {
+    background-color: var(--color-fill);
+    border-radius: 12px;
+}
+
+.sidebar-section {
+    padding-inline: 0.75rem;
+}
+
+
+/* ====== Profile ========================== */
+.sidebar-profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.sidebar-profile-img {
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.25rem solid #ebf2fa;
+    background: linear-gradient(180deg, #F7D35A 0%, #F2C23A 50%, #D9A82F 100%);
+}
+
+.profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.sidebar-profile-text {
+    text-align: center;
+}
+
+.sidebar-profile-text h2 {
+    font-family: var(--font-body);
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-profile-text p {
+    color: var(--color-text-muted);
+}
+
+.sidebar-social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* ====== Social del ===================================== */
+.sidebar-social-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+    border-radius: 0.75rem;
+    padding: 0.4rem;
+
+    background-color: var(--color-surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar-social-wrapper a:hover {
+    transform: translateY(-2px);
+    background-color: #e1e6ee;
+}
+
+.sidebar-social-wrapper a:active {
+    background-color: #d2d9e3;
+    transform: translateY(0);
+}
+
+.sidebar-social-wrapper a:focus-visible {
+    outline: 3px solid #0B5FFF;
+    outline-offset: 3px;
+    background-color: #e1e6ee;
+}
+
+.sidebar-social-wrapper a img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+
+/* ====== Kontakt del ============================= */
+.sidebar-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-surface);
+}
+
+.sidebar-contact-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-contact-item {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    align-items: start;
+    column-gap: 1rem;
+    border-bottom: 1px solid var(--color-border, #E0E6ED);
+    padding-block: 1rem;
+}
+
+.sidebar-contact-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #F2A900;
+    fill: currentColor;
+}
+
+.sidebar-contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 0.9rem;
+}
+
+.sidebar-contact-label {
+    color: var(--color-text-muted);
+}
+
+.sidebar-contact-value {
+    font-weight: 500;
+}
+
+.download-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn {
+    display: flex;
+    max-width: 11rem;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-pill);
+    border: none;
+    background: var(--gradient-accent-default);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    /* texten radbryts inte */
+    white-space: nowrap;
+    font-size: 0.8rem;
+    transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.download-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.download-btn:focus-visible {
+    outline: 3px solid #0B5FFF;
+    outline-offset: 3px;
+    filter: brightness(1.07);
+}
+
+.download-btn:hover {
+    background: var(--gradient-accent-hover);
+    transform: translateY(-1px);
+}
+
+.download-btn:active {
+    background: var(--gradient-accent-active);
+    transform: translateY(1px);
+}
+
+
+
+
+/* ====== Väder-api ===================================== */
+.sidebar-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-surface);
+    padding-block: 1.5rem;
+    color: var(--color-text-medium);
+}
+
+#weather-location {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#weather-temp {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#weather-feels {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.weather-img-wrapper {
+    border-radius: 50%;
+    background-color: rgba(172, 174, 174, 0.404);
+
+}
+
+
+/* ====== Tekniska färdigheter ===================================== */
+.sidebar-skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background: var(--color-surface);
+    border-radius: var(--radius-pill);
+    padding: 2rem;
+}
+
+.sidebar-skill-title {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.sidebar-skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.sidebar-skill-list li {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+
+}
+
+.sidebar-skill-list li::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: var(--color-text-medium);
+    font-weight: bold;
+}

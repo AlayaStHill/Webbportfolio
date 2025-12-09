@@ -3,28 +3,29 @@
     /* var(--namn-) */
     --color-bg: #ebf2fa;
     --color-surface: #f2f5f9;
+    --color-fill: #FFF;
 
-    --color-text-heading: #0B0909;
+    --color-text-heading: #2e2e2e;
     --color-text-body: #1A1003;
     --color-text-muted: #5C5C5C;
+    --color-text-medium: #2e2e2e;
 
     --color-primary: #ff9c1a;
     --color-secondary: #ec1b09;
 
-    --gradient-accent-header: linear-gradient(90deg, #DD7E00 0%,   #E46E00 50%, #ec1b09 100%);
-    /* default */
-    --gradient-accent-default: linear-gradient(90deg, #D8830F, #E80505);
+    --gradient-accent-default: linear-gradient(90deg, #DD7E00 0%, #E46E00 50%, #ec1b09 100%);
+    /* focus */
+    --gradient-accent-focus: linear-gradient(90deg, #F4991A 0%, #F07E1A 50%, #F33D22 100%);
     /* hover */
-    --gradient-accent-hover: linear-gradient(90deg, #CC7B14, #C20604);
+    --gradient-accent-hover: linear-gradient(90deg, #E88C00 0%, #F07800 50%, #F02D0F 100%);
     /* active */
-    --gradient-accent-active: linear-gradient(90deg, #B46A12, #A20504);
+    --gradient-accent-active: linear-gradient(90deg, #C96A00 0%, #DA5F00 50%, #D31A08 100%);
 
     --color-error: #ec1b09;
 
     --font-headings: "Poppins", sans-serif;
     --font-body: "Raleway", sans-serif;
 
-    --border-radius: 8px;
     /* knappar */
     --radius-pill: 20px;
 
@@ -58,12 +59,19 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, sans-serif;
+    font-family: var(--font-body), system-ui, sans-serif;
     /* WCAG */
     line-height: 1.5;
     /* Fallback */
     background-color: #ebf2fa;
-    color: #0B0909;
+    color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-headings);
+    color: var(--color-text-heading);
 }
 
 h1,

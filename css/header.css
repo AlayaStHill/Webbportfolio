@@ -12,7 +12,7 @@
 
 .logo-lastname {
     /* lägger gradienten bakom texten */
-    background: var(--gradient-accent-header);
+    background: var(--gradient-accent-default);
     /* klipper gradienten till textens form */
     background-clip: text;
     -webkit-background-clip: text;
@@ -41,7 +41,7 @@
 
 /* Överstyr base */
 .navbar-list a:hover {
-    background: var(--gradient-accent-header);
+    background: var(--gradient-accent-default);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -49,10 +49,31 @@
     text-decoration: none;
 }
 
+nav a:focus {
+    outline: none;
+}
+
 /* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
-.navbar-list a:focus {
+.navbar-list a:focus-visible {
     outline: 3px solid #0B5FFF;
     /* avståndet mellan elementet och outline */
     outline-offset: 4px;
     border-radius: var(--radius-pill);
+
+    background: var(--gradient-accent-default);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-list a:active {
+    transform: translateY(1px);
+    background: var(--gradient-accent-active);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
