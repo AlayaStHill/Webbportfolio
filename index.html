@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
@@ -134,9 +136,11 @@
                     <div class="weather-img-wrapper">
                         <img id="weather-icon" src="default-weather.png" alt="Väderikon">
                     </div>
-                    <p id="weather-location"></p>
-                    <p id="weather-temp"></p>
-                    <p id="weather-feels"></p>
+                    <div>
+                        <p id="weather-location"></p>
+                        <p id="weather-temp"></p>
+                        <p id="weather-feels"></p>
+                    </div>
                 </section>
 
                 <!-- ====== Skills del ====== -->
@@ -161,27 +165,38 @@
                     <div class="container">
                         <div class="hero-wrapper">
                             <!-- div av layout skäl, kolumn -->
-                            <div class="hero-img"> <img src="assets/img/Hero.png" alt="Bild på Alaya St. Hill">
-                            </div>
-                            <div class="hero-text">
-                                <h1 class="hero-title">Webbutvecklare .NET</h1>
-                                <p> Jag bygger användarvänliga webbapplikationer med fokus på modern frontend,
-                                    tillgänglighet och tydlig struktur. Just nu studerar jag till Webbutvecklare
-                                    .NET
-                                    och specialiserar mig på att skapa hållbara digitala lösningar.</p>
-                            </div>
 
-                            <!-- a eftersom avigering inom sidan. Är inte en action=knapp ex submit-->
-                            <div><a class="btn-cta" href="#contact">Kontakt</a></div>
+                            <div class="hero-content">
+                                <div class="hero-left">
+                                    <h1 class="hero-title">Webbutvecklare .NET</h1>
+                                    <p> Jag bygger användarvänliga webbapplikationer med fokus på modern frontend,
+                                        tillgänglighet och tydlig struktur. Just nu studerar jag till Webbutvecklare
+                                        .NET
+                                        och specialiserar mig på att skapa hållbara digitala lösningar.</p>
+
+                                    <!-- a eftersom avigering inom sidan. Är inte en action=knapp ex submit-->
+                                    <div><a class="btn-cta" href="#contact">Kontakt</a></div>
+                                </div>
+
+
+                                <div class="hero-img"> <img src="assets/img/Hero.png" alt="Bild på Alaya St. Hill">
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <!-- ====== Om mig sektion ====== -->
-                <section class="main-about" id="about-text">
+                <section class="main-about card" id="about-text">
                     <div class="container">
                         <div class="about-wrapper">
-                            <h2 class="about-title">Om mig</h2>
+                            <div class="about-title">
+                                <h2 class="about-title">Om mig </h2>
+                                <img src="assets/icons/Line.svg" />
+
+                            </div>
                             <p class="about-text">
                                 Efter flera terminer inom medicinska studier har jag landat rätt i webbutveckling.
                                 Jag tar med mig analytisk förmåga och ett tydligt problemlösningsfokus.
@@ -190,6 +205,8 @@
                                 och
                                 bidra med strukturerade lösningar.</p>
                         </div>
+
+
                     </div>
                 </section>
 

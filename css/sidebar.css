@@ -17,7 +17,7 @@
 }
 
 .sidebar-profile-img {
-    width: 80%;
+    width: 60%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -45,14 +45,15 @@
     color: var(--color-text-muted);
 }
 
+
+/* ====== Social del ===================================== */
+
 .sidebar-social-wrapper {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 0;
 }
-
-
-/* ====== Social del ===================================== */
 .sidebar-social-wrapper a {
     display: flex;
     justify-content: center;
@@ -189,26 +190,25 @@
 /* ====== Väder-api ===================================== */
 .sidebar-weather {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-surface);
     padding-block: 1.5rem;
     color: var(--color-text-medium);
+    gap: 1rem;
 }
 
 #weather-location {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 #weather-temp {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 #weather-feels {
-    font-size: 1.5rem;
     color: var(--color-text-muted);
 }
 

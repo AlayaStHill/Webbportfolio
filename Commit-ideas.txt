@@ -1,6 +1,7 @@
 ATT GÖRA:
 Align logo med sidebar
 Gör så att sidebar inte behöver skrollas
+gradient hero line
 
 <!-- ======  ====== -->
 
@@ -13,3 +14,5 @@ Add sidebar profile layout.
 Style profile image and profile text.
 Add global default text color to base body.
 Add global heading color to base CSS for consistent typography.
+
+Implement base layout structure for the hero section, including text block, portrait image positioning, and accent border.
