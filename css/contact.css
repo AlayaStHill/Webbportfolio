@@ -57,7 +57,6 @@
     /* strider mot wcag (:focus) */
     outline: none;
     border: none;
-
 }
 
 /* wcag, fokus måste synas tydligt */
@@ -84,14 +83,35 @@
     border: 2px solid rgba(128, 128, 128, 0.239);
     border-radius: 8px;
     padding: 1rem;
-
 }
-
-.submit {}
 
 .submit-btn {
     padding: 0.5rem 1.8rem;
-    border: 2px solid var(--color-primary);
     border-radius: 5rem;
     font-weight: 600;
+
+    border: 2px solid transparent;
+    background:
+        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
+        var(--gradient-accent-default) border-box;
+    color: var(--color-text-body);
+    transition: transform 0.15s ease, opacity 0.2s ease;
+
+}
+
+.submit-btn:hover {
+    text-decoration: none;
+    background:
+        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
+        var(--gradient-accent-hover) border-box;
+    color: var(--color-text-body);
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    background:
+        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
+        var(--gradient-accent-active) border-box;
+    color: var(--color-text-body);
+    transform: translateY(1px);
 }
