@@ -95,8 +95,8 @@
     /* styr när sticky aktiveras, 5rem (=offset) från viewport top (headerns slut) */
     top: 8rem;
     margin-bottom: 3rem;
-    align-self: flex-start;
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     /* fyller resten av skärmen */
     /* height: calc(100vh - 10rem); */
 
@@ -126,9 +126,39 @@
     padding: 1rem;
 }
 
+.mobile-hero {
+    display: none;
+}
+
 .site-footer {
     width: 100%;
     padding-block: 0.75rem;
     background-color: var(--color-bg);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1200px) {
+    .site-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 5rem;
+
+    }
+
+    .sidebar {
+        display: none;
+        /* säkerhetsbälte, men flex-centrering räcker */
+    }
+
+    .site-main {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .mobile-hero {
+        display: block;
+    }
 }

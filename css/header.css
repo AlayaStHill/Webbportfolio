@@ -77,3 +77,19 @@ nav a:focus {
     -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
+
+.menu-burger {
+    display: none;
+    font-size: 2rem;
+    color: var(--color-text-medium)
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}
