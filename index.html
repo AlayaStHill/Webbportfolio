@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/main-skill.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
@@ -386,18 +387,32 @@
                 </section>
 
                 <!-- ====== Kontakt sektion ====== -->
-                <section class="main-contact">
+                <section class="main-contact card">
                     <div class="container">
                         <div class="contact-wrapper">
+                            <div class="contact-title">
+                                <h2>Kontakt</h2>
+                                <img src="/assets/icons/Line.svg" />
+                            </div>
 
-                            <h2>Kontakt</h2>
+                            <div class="contact-info">
+                                <div class="contact-info-card contact-info-card-orange">
+                                    <h3>Telefon:</h3>
+                                    <p>+46 73 533 07 61</p>
+                                </div>
+                                <div class="contact-info-card">
+                                    <h3>Email:</h3>
+                                    <p>alaya.st.hill@gmail.com</p>
+                                </div>
+                            </div>
+
                             <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
                                 <input type="hidden" name="access_key" value="0d62155d-2058-482e-88f5-d0b4641035d2 ">
 
                                 <!-- snake_case vanligt för många API:er, name-värdet skickas -->
                                 <!-- Förnamn -->
                                 <div class="form-group">
-                                    <label for="first-name">Förnamn</label>
+                                    <label for="first-name">Förnamn:</label>
                                     <input type="text" id="first-name" name="first_name" required
                                         aria-describedby="error-firstname">
                                     <p id="error-firstname" class="error-message" aria-live="polite"></p>
@@ -405,7 +420,7 @@
 
                                 <!-- Efternamn -->
                                 <div class="form-group">
-                                    <label for="last-name">Efternamn</label>
+                                    <label for="last-name">Efternamn:</label>
                                     <input type="text" id="last-name" name="last_name" required
                                         aria-describedby="error-lastname">
                                     <p id="error-lastname" class="error-message" aria-live="polite"></p>
@@ -413,20 +428,22 @@
 
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <label for="email">E-postadress</label>
+                                    <label for="email">E-postadress:</label>
                                     <input type="email" id="email" name="email" required aria-describedby="error-email">
                                     <p id="error-email" class="error-message" aria-live="polite"></p>
                                 </div>
 
                                 <!-- Meddelande -->
-                                <div class="form-group">
-                                    <label for="message">Meddelande</label>
+                                <div class="form-group form-group-message">
+                                    <label for="message">Meddelande:</label>
                                     <textarea id="message" name="message" required
                                         aria-describedby="error-message"></textarea>
                                     <p id="error-message" class="error-message" aria-live="polite"></p>
                                 </div>
+                                <div class="submit">
+                                    <button type="submit" class="submit-btn">Skicka</button>
 
-                                <button type="submit" class="submit-btn">Skicka</button>
+                                </div>
                             </form>
                         </div>
                     </div>

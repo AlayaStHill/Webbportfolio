@@ -1,15 +1,25 @@
 ATT GÖRA:
-Align logo med sidebar
-Gör så att sidebar inte behöver skrollas
-gradient hero line
-skapa button.c layout
+- Align logo med sidebar
 
-ikoner för skills-section
+- Sidebar längre?
 
-align cards main
- fixa headings
+- Gör om till gradient: hero line, kontaktformulär + knapp,
 
-<!-- ======  ====== -->
+- skapa button.css layout DRY
+
+- skapa/förbättra .card-klass, lägga till .card-color-klass (main skills, contact) DRY
+
+- lägga till ikoner för skills-section
+
+- align cards main?
+
+- fixa line-height cards main
+
+- fixa headings-klass?
+
+
+=========================================================================
+
 
 Add/define/introduce/create site-body structure with aside, main and aside top section.
 
