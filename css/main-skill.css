@@ -4,11 +4,6 @@
     gap: 3rem;
 }
 
-.skills-title {
-    padding-bottom: 1rem;
-}
-
-
 .skills-list {
     display: grid;
     gap: 1.5rem;

@@ -44,7 +44,7 @@
 
 .form-group {
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.239);
+    border-bottom: 2px solid var(--color-text-border);
 }
 
 .form-group label {
@@ -80,7 +80,7 @@
 
 .form-group-message textarea {
     height: 10rem;
-    border: 2px solid rgba(128, 128, 128, 0.239);
+    border: 2px solid  var(--color-text-border);
     border-radius: 8px;
     padding: 1rem;
 }

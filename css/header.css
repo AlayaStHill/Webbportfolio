@@ -7,7 +7,7 @@
 }
 
 .logo-firstname {
-    color: var(--color-text-heading)
+    color: var(--color-text-medium)
 }
 
 .logo-lastname {
@@ -23,7 +23,7 @@
 }
 
 .navbar {
-    color: var(--color-text-heading);
+    color: var(--color-text-medium);
     font-family: var(--font-headings);
 }
 

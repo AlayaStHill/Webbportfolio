@@ -11,6 +11,8 @@
 
 - lägga till ikoner för skills-section
 
+- lägga till ikoner för kontakt sektionen
+
 - align cards main?
 
 - fixa line-height cards main
@@ -30,6 +32,10 @@
 - GitHub länk hover för otydlig skillnad
 
 - Gör fokus-form bättre på logo
+
+- navigation i main till början av sektionen
+
+- fixa texter
 
 =========================================================================
 
