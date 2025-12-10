@@ -1,11 +1,11 @@
-ATT GÖRA:
-- Align logo med sidebar
+/////////////////////// ATT GÖRA: ////////////////////////////
+- Align logo med sidebar 
 
 - Sidebar längre?
 
-- Gör om till gradient: hero line, kontaktformulär + knapp,
+- Gör om till gradient: hero line, kontaktformulär,
 
-- skapa button.css layout DRY
+- skapa button och en a layoutklass (default, hover, active, focus) DRY
 
 - skapa/förbättra .card-klass, lägga till .card-color-klass (main skills, contact) DRY
 
@@ -15,8 +15,21 @@ ATT GÖRA:
 
 - fixa line-height cards main
 
-- fixa headings-klass?
+- fixa headings-klass! blir konstigt
 
+- lägg in cv
+
+- margin bottom på ladda ned CV
+
+- script defer för att samla i head
+
+- ta bort oanvända klasser: skills-section?
+
+- textfärger, inte använt base-variabler
+
+- GitHub länk hover för otydlig skillnad
+
+- Gör fokus-form bättre på logo
 
 =========================================================================
 
