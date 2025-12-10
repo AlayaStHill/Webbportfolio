@@ -1,7 +1,6 @@
 .about-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     background-color: var(--color-surface-2);
 }
 
