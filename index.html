@@ -141,7 +141,7 @@
                 </section>
 
                 <!-- ====== Väder-API del ====== -->
-                <section class="sidebar-section sidebar-weather card " id="weather-info">
+                <section class="sidebar-section sidebar-weather " id="weather-info">
                     <div class="weather-img-wrapper">
                         <img id="weather-icon" src="default-weather.png" alt="Väderikon">
                     </div>
@@ -169,30 +169,6 @@
         <main class="site-main">
             <div class="site-main-wrapper">
 
-                <!-- ====== Mobil hero ====== -->
-                <div class="mobile-hero">
-                    <section class=" sidebar-section sidebar-profile-wrapper">
-                        <div class="sidebar-profile-img">
-                            <img src="assets/img/Profile.png" alt="Bild på Alaya St. Hill" class="profile-img">
-                        </div>
-                        <div class="sidebar-profile-text">
-                            <h2>Alaya St. Hill</h2>
-                            <p>Webbutvecklare .NET</p>
-                        </div>
-                    </section>
-
-                    <!-- ====== Social del ====== -->
-                    <section class="sidebar-section sidebar-social-wrapper">
-                        <a href="https://www.linkedin.com/in/alaya-st-hill-36613a154" target="_blank"
-                            rel="noopener noreferrer" aria-label="Besök Alayas LinkedIn-profil" class="">
-                            <img src="assets/icons/linkedin.svg" alt="">
-                        </a>
-                        <a href="https://github.com/AlayaStHill" target="_blank" rel="noopener noreferrer"
-                            aria-label="Besök Alayas GitHub-profil">
-                            <img src="assets/icons/github.svg" alt="">
-                        </a>
-                    </section>
-                </div>
 
 
                 <!-- ====== Hero sektion ====== -->
@@ -372,7 +348,9 @@
 
                             <!-- Projekt 1 -->
                             <article class="portfolio-card card">
-                                <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
+                                <div class="project-img-wrapper">
+                                    <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
+                                </div>
 
                                 <h3 class="portfolio-project-title">Projekt 1</h3>
                                 <p class="portfolio-description">Beskrivning projekt</p>
@@ -388,8 +366,9 @@
 
                             <!-- Projekt 2 -->
                             <article class="portfolio-card card">
-                                <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
-
+                                <div class="project-img-wrapper">
+                                    <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
+                                </div>
                                 <h3 class="portfolio-project-title">Projekt 2</h3>
                                 <p class="portfolio-description">Beskrivning projekt</p>
 
@@ -404,8 +383,9 @@
 
                             <!-- Projekt 3 -->
                             <article class="portfolio-card card">
-                                <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
-
+                                <div class="project-img-wrapper">
+                                    <img src="assets/img/placeholder.png" alt="Bild på projekt" class="portfolio-img">
+                                </div>
                                 <h3 class="portfolio-project-title">Projekt 3</h3>
                                 <p class="portfolio-description">Beskrivning projekt</p>
 
@@ -422,9 +402,9 @@
                 </section>
 
                 <!-- ====== Kontakt sektion ====== -->
-                <section class="main-contact card">
+                <section class="main-contact">
                     <div class="container">
-                        <div class="contact-wrapper">
+                        <div class="contact-wrapper card">
                             <div class="heading">
                                 <h2 class="section-title">Kontakt</h2>
                                 <img src="/assets/icons/Line.svg" />

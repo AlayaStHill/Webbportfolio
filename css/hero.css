@@ -49,7 +49,6 @@ width: 100%;
     cursor: pointer;
     font-size: 0.9rem;
     transition: transform 0.15s ease, opacity 0.2s ease;
-    margin-bottom: 2rem;
 }
 
 .btn-cta:focus-visible {
@@ -69,7 +68,7 @@ width: 100%;
     transform: translateY(1px);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 74rem) {
     .main-hero{
         display: none;
     }

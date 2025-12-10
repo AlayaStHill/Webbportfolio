@@ -186,8 +186,6 @@
 }
 
 
-
-
 /* ====== Väder-api ===================================== */
 .sidebar-weather {
     display: flex;
@@ -197,6 +195,7 @@
     padding-block: 1.5rem;
     color: var(--color-text-medium);
     gap: 1rem;
+    border-radius: var(--radius-pill);
 }
 
 #weather-location {
@@ -255,4 +254,18 @@
     margin-right: 0.5rem;
     color: var(--color-text-medium);
     font-weight: bold;
+}
+
+@media (max-width: 74rem) {
+
+    .sidebar-contact-wrapper,
+    .sidebar-weather,
+    .sidebar-skill-wrapper {
+        display: none;
+    }
+
+    .sidebar {
+        /* centrerar hela sidobarkortet */
+        margin-inline: auto;
+    }
 }

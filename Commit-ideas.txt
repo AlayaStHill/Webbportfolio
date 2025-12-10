@@ -37,6 +37,8 @@
 
 - fixa texter
 
+- fixa mobil-vy: bort med vita cards
+
 =========================================================================
 
 
@@ -50,4 +52,7 @@ Style profile image and profile text.
 Add global default text color to base body.
 Add global heading color to base CSS for consistent typography.
 
-Implement base layout structure for the hero section, including text block, portrait image positioning, and accent border.
+Update mobile view responsive layout.
+Remove former responsive design göra enligt standard? 
+Update mobile view by removing hero, weather and soft-skill sections. 
+Make övriga sections conform to smaller view by display flex.

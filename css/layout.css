@@ -97,6 +97,7 @@
     margin-bottom: 3rem;
     width: 100%;
     max-width: 20rem;
+    align-self: flex-start;
     /* fyller resten av skärmen */
     /* height: calc(100vh - 10rem); */
 
@@ -123,7 +124,7 @@
 .site-main-wrapper {
     display: grid;
     gap: 5rem;
-    padding: 1rem;
+    padding-bottom: 3rem;
 }
 
 .mobile-hero {
@@ -137,28 +138,29 @@
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 1200px) {
+
+/* =========================== Media queries MOBIL ======================================== */
+
+@media (max-width: 74rem) {
     .site-body {
-        display: flex;
+        /* main + aside under varandra */
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding-top: 5rem;
-
     }
 
     .sidebar {
-        display: none;
-        /* säkerhetsbälte, men flex-centrering räcker */
+        position: static;
+        margin-top: 3rem;
     }
 
-    .site-main {
-        width: 100%;
-        max-width: 50rem;
-        margin: 0 auto;
-    }
-
-    .mobile-hero {
-        display: block;
+    .heading {
+        /* linje och rubrik under varandra */
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 1.5rem;
     }
 }
+
+
+

@@ -80,7 +80,7 @@
 
 .form-group-message textarea {
     height: 10rem;
-    border: 2px solid  var(--color-text-border);
+    border: 2px solid var(--color-text-border);
     border-radius: 8px;
     padding: 1rem;
 }
@@ -114,4 +114,14 @@
         var(--gradient-accent-active) border-box;
     color: var(--color-text-body);
     transform: translateY(1px);
+}
+
+@media (max-width: 74rem) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info-card {
+        width: 100%;
+    }
 }

@@ -32,4 +32,9 @@
     justify-self: center;
 }
 
-
+@media (max-width: 74rem) {
+    .skill-card-center {
+        /* nollställer span 2 column i git-card */
+        grid-column: auto;
+    }
+}
