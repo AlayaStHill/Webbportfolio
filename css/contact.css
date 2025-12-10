@@ -1,0 +1,97 @@
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+
+}
+
+.contact-info-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-info-card-orange {
+    background-color: var(--color-surface-3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--color-surface-1);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.239);
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    /* strider mot wcag (:focus) */
+    outline: none;
+    border: none;
+
+}
+
+/* wcag, fokus måste synas tydligt */
+.form-group:focus-within {
+    border-bottom-color: var(--color-primary);
+    /* för att förhindra att browsers tar bort focus pga outline: none, säkerhetsåtgärd */
+    outline: 2px solid transparent;
+}
+
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: 2px solid transparent;
+}
+
+.form-group-message {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.7rem;
+}
+
+.form-group-message textarea {
+    height: 10rem;
+    border: 2px solid rgba(128, 128, 128, 0.239);
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.submit {}
+
+.submit-btn {
+    padding: 0.5rem 1.8rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 5rem;
+    font-weight: 600;
+}
