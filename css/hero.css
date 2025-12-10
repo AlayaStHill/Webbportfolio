@@ -34,12 +34,14 @@
 }
 
 .hero-img {
-width: 100%;
+    width: 100%;
 }
 
 .btn-cta {
-    display: inline-block;
-    max-width: 7rem;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 8rem;
     padding: 0.7rem 1rem;
     border-radius: var(--radius-pill);
     border: none;
@@ -48,6 +50,7 @@ width: 100%;
     font-weight: 600;
     cursor: pointer;
     font-size: 0.9rem;
+    white-space: nowrap;
     transition: transform 0.15s ease, opacity 0.2s ease;
 }
 
@@ -69,7 +72,7 @@ width: 100%;
 }
 
 @media (max-width: 74rem) {
-    .main-hero{
+    .main-hero {
         display: none;
     }
 }

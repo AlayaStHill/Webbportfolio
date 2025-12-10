@@ -1,6 +1,7 @@
 .sidebar {
     background-color: var(--color-surface-2);
     border-radius: 12px;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar-section {
@@ -146,45 +147,20 @@
 }
 
 .download-btn {
-    display: flex;
+    display: inline-flex;
     max-width: 11rem;
     align-items: center;
     gap: 0.8rem;
     margin-top: 0.5rem;
     padding: 0.7rem 1rem;
-    border-radius: var(--radius-pill);
-    border: none;
-    background: var(--gradient-accent-default);
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
     /* texten radbryts inte */
     white-space: nowrap;
-    font-size: 0.8rem;
-    transition: transform 0.15s ease, opacity 0.2s ease;
 }
 
 .download-btn svg {
     width: 1.25rem;
     height: 1.25rem;
 }
-
-.download-btn:focus-visible {
-    outline: 3px solid #0B5FFF;
-    outline-offset: 3px;
-    filter: brightness(1.07);
-}
-
-.download-btn:hover {
-    background: var(--gradient-accent-hover);
-    transform: translateY(-1px);
-}
-
-.download-btn:active {
-    background: var(--gradient-accent-active);
-    transform: translateY(1px);
-}
-
 
 /* ====== Väder-api ===================================== */
 .sidebar-weather {
@@ -256,16 +232,51 @@
     font-weight: bold;
 }
 
+.btn-cta-mobile {
+    display: none;
+}
+
+
+
 @media (max-width: 74rem) {
 
-    .sidebar-contact-wrapper,
     .sidebar-weather,
     .sidebar-skill-wrapper {
+        display: none;
+    }
+
+    .sidebar-contact-wrapper {
+        background: transparent;
+    }
+
+    .sidebar-contact-item {
         display: none;
     }
 
     .sidebar {
         /* centrerar hela sidobarkortet */
         margin-inline: auto;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .download-btn-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .download-btn {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-cta-mobile {
+        display: flex;
+        justify-content: center;
+        width: 15rem;
+        margin-top: 0.5rem;
+        padding: 0.77rem 3rem;
     }
 }

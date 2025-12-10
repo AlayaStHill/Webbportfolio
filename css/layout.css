@@ -32,6 +32,14 @@
     text-align: center;
 }
 
+#about,
+#skills,
+#testimonials,
+#portfolio,
+#contact {
+  scroll-margin-top: 100px; /* justera efter header-höjd, t.ex. 80–120px */
+}
+
 /* ====== Header ============================== */
 
 /* Fullbreddslagret */
@@ -103,7 +111,6 @@
 
     /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
     overflow-y: auto;
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar-wrapper {
@@ -159,6 +166,12 @@
         flex-direction: column;
         gap: 0;
         margin-bottom: 1.5rem;
+    }
+
+    .card {
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
     }
 }
 

@@ -39,6 +39,8 @@
 
 - fixa mobil-vy: bort med vita cards
 
+- sidebar-sections sitter snett åt höger. Hur lägga på card
+
 =========================================================================
 
 
@@ -47,12 +49,3 @@ Add/define/introduce/create site-body structure with aside, main and aside top s
 
 Senaste commits:
 
-Add sidebar profile layout.
-Style profile image and profile text.
-Add global default text color to base body.
-Add global heading color to base CSS for consistent typography.
-
-Update mobile view responsive layout.
-Remove former responsive design göra enligt standard? 
-Update mobile view by removing hero, weather and soft-skill sections. 
-Make övriga sections conform to smaller view by display flex.
