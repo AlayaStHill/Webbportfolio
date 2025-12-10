@@ -37,7 +37,8 @@
 #testimonials,
 #portfolio,
 #contact {
-  scroll-margin-top: 100px; /* justera efter header-höjd, t.ex. 80–120px */
+    /* gör så att navigering stannar i rätt höjd */
+    scroll-margin-top: 6.25rem;
 }
 
 /* ====== Header ============================== */
@@ -61,7 +62,7 @@
 
 .header-inner {
     height: 100%;
-    max-width: 75rem;
+    max-width: 74rem;
     margin-inline: auto;
     padding-inline: 1rem;
     padding-block: 0.75rem;
@@ -174,6 +175,3 @@
         padding: 0;
     }
 }
-
-
-
