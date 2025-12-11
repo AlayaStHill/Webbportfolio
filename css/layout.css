@@ -41,6 +41,14 @@
     scroll-margin-top: 6.25rem;
 }
 
+.divider {
+    width: 15rem;
+    height: 0.125rem;
+    background: var(--gradient-accent-focus);
+    border-radius: 2px;
+    margin-bottom: 0.8rem;
+}
+
 /* ====== Header ============================== */
 
 /* Fullbreddslagret */
@@ -107,11 +115,6 @@
     width: 100%;
     max-width: 20rem;
     align-self: flex-start;
-    /* fyller resten av skärmen */
-    /* height: calc(100vh - 10rem); */
-
-    /* då 100vh inte följer sidebarens innehåll, innehåll skärs bort om viewport blir för liten för innehållet */
-    overflow-y: auto;
 }
 
 .sidebar-wrapper {
@@ -149,7 +152,7 @@
 
 /* =========================== Media queries MOBIL ======================================== */
 
-@media (max-width: 74rem) {
+@media (max-width: 67rem) {
     .site-body {
         /* main + aside under varandra */
         flex-direction: column;

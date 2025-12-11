@@ -105,10 +105,16 @@ nav a:focus {
     display: block;
 }
 
+/* Gäller när skärmen är 74rem eller bredare */
+@media (min-width: 74rem) {
+    .mobile-nav {
+        display: none;
+    }
+}
 
 
-
-@media (max-width: 1200px) {
+/* Gäller när skärmen är 74rem eller smalare */
+@media (max-width: 74rem) {
     .navbar {
         display: none;
     }

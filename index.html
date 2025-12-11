@@ -52,7 +52,10 @@
                     <li><a href="#portfolio">Portfölj</a></li>
                 </ul>
             </nav>
-            <button class="menu-burger" id="menu-burger-btn"><i class="fa-solid fa-bars"></i></button>
+            <!-- Gör wcag säker i js -->
+            <button class="menu-burger" id="menu-burger-btn" aria-expanded="false" aria-controls="mobile-nav">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i><span class="sr-only">Öppna meny</span></button>
+
         </div>
 
 
@@ -197,10 +200,10 @@
                             <div class="hero-content">
                                 <div class="hero-left">
                                     <h1 class="hero-title">Webbutvecklare .NET</h1>
-                                    <p> Jag bygger användarvänliga webbapplikationer med fokus på modern frontend,
-                                        tillgänglighet och tydlig struktur. Just nu studerar jag till Webbutvecklare
-                                        .NET
-                                        och specialiserar mig på att skapa hållbara digitala lösningar.</p>
+                                    <p> Jag bygger användarvänliga webbapplikationer med fokus på tillgänglighet, tydlig
+                                        struktur och hållbar kod. Jag studerar till Webbutvecklare .NET och arbetar med
+                                        både frontend och backend för att utveckla stabila och genomtänkta digitala
+                                        lösningar. </p>
 
                                     <!-- a eftersom avigering inom sidan. Är inte en action=knapp ex submit-->
                                     <div><a class="btn-cta" href="#contact">Kontakta mig</a></div>
@@ -222,7 +225,7 @@
                         <div class="about-wrapper card">
                             <div class="heading">
                                 <h2 class="section-title">Om mig</h2>
-                                <img src="assets/icons/Line.svg" />
+                                <div class="divider"></div>
 
                             </div>
                             <p class="about-text">
@@ -247,7 +250,7 @@
                             <article class="skills-section card">
                                 <div class="heading">
                                     <h2 class="section-title">Tekniska färdigheter</h2>
-                                    <img src="assets/icons/Line.svg" />
+                                    <div class="divider"></div>
                                 </div>
                                 <!-- <p>Jag arbetar inom .NET-ekosystemet och bygger tydlig, strukturerad och
                                     användarvänlig
@@ -277,8 +280,8 @@
 
                                     <li class="skill-card skill-card-orange">
                                         <h3>xUnit</h3>
-                                        <p>Skriver enhetstester för att säkerställa funktionalitet och förebygga
-                                            regressionsfel.
+                                        <p>Skriver enhetstester för att säkerställa funktionalitet och upptäcka
+                                            regressionsfel vid förändringar.
                                         </p>
                                     </li>
                                     <li class="skill-card skill-card-center">
@@ -295,7 +298,7 @@
                             <article class="skills-section card">
                                 <div class="heading">
                                     <h2 class="section-title">Metodik & design</h2>
-                                    <img src="assets/icons/Line.svg" />
+                                    <div class="divider"></div>
                                 </div>
                                 <!-- <p class="skills-text">
                                     Jag arbetar analytiskt och metodiskt, med fokus på struktur,
@@ -319,7 +322,7 @@
                                     </li>
                                     <li class="skill-card skill-card-orange">
                                         <h3>Designmönster</h3>
-                                        <p>Grundläggande förståelse för vanliga mönster såsom Singleton och
+                                        <p>Grundläggande förståelse för vanliga mönster såsom Service och
                                             Repository.
                                         </p>
                                     </li>
@@ -424,7 +427,7 @@
                         <div class="contact-wrapper card">
                             <div class="heading">
                                 <h2 class="section-title">Kontakt</h2>
-                                <img src="/assets/icons/Line.svg" />
+                                <div class="divider"></div>
                             </div>
 
                             <div class="contact-info">
@@ -444,33 +447,37 @@
                                 <!-- snake_case vanligt för många API:er, name-värdet skickas -->
                                 <!-- Förnamn -->
                                 <div class="form-group">
-                                    <label for="first-name">Förnamn:</label>
+                                    <p id="error-firstname" class="error-message" aria-live="polite">Ange Förnamn</p>
+
+                                    <label for="first-name" id="firstname-label">Förnamn:</label>
                                     <input type="text" id="first-name" name="first_name" required
                                         aria-describedby="error-firstname">
-                                    <p id="error-firstname" class="error-message" aria-live="polite"></p>
                                 </div>
 
                                 <!-- Efternamn -->
                                 <div class="form-group">
+                                    <p id="error-lastname" class="error-message" aria-live="polite">Ange Efternamn</p>
+
                                     <label for="last-name">Efternamn:</label>
                                     <input type="text" id="last-name" name="last_name" required
                                         aria-describedby="error-lastname">
-                                    <p id="error-lastname" class="error-message" aria-live="polite"></p>
                                 </div>
 
                                 <!-- Email -->
                                 <div class="form-group">
+                                    <p id="error-email" class="error-message" aria-live="polite">Ange E-post</p>
+
                                     <label for="email">E-postadress:</label>
                                     <input type="email" id="email" name="email" required aria-describedby="error-email">
-                                    <p id="error-email" class="error-message" aria-live="polite"></p>
                                 </div>
 
                                 <!-- Meddelande -->
                                 <div class="form-group form-group-message">
+                                    <p id="error-message" class="error-message" aria-live="polite">Ange Meddelande</p>
+
                                     <label for="message">Meddelande:</label>
                                     <textarea id="message" name="message" required
                                         aria-describedby="error-message"></textarea>
-                                    <p id="error-message" class="error-message" aria-live="polite"></p>
                                 </div>
                                 <div class="submit">
                                     <button type="submit" class="submit-btn">Skicka</button>
@@ -493,4 +500,5 @@
     </footer>
     <script src="weather.js"></script>
     <script src="mobile-menu.js"></script>
+    <script src="validation.js"></script>
 </body>

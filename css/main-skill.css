@@ -14,7 +14,8 @@
     padding: 1.25rem;
     border-radius: 12px;
     background-color: var(--color-bg);
-    height: 9rem;
+    /* min-, försöker göra sidan mindre känslig för storleks-inställningar på bildskärmar */
+    min-height: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

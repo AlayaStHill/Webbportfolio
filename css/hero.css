@@ -2,12 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .hero-wrapper {
-
-    height: calc(40vh);
+    min-height: calc(40vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,10 +13,13 @@
 }
 
 .hero-content {
-    display: flex;
-    margin-top: 5rem;
+    display: grid;
+    /* text/bild */
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+
     border-bottom: 4px solid var(--color-primary);
     border-right: 4px solid var(--color-primary);
 }
@@ -34,7 +35,10 @@
 }
 
 .hero-img {
-    width: 100%;
+    /* max-width är tak. På stor skärm bredd 18, men mindre om containern blir mindre */
+    width: 18rem;
+    max-width: 100%;
+    align-self: center;
 }
 
 .btn-cta {
@@ -52,6 +56,8 @@
     font-size: 0.9rem;
     white-space: nowrap;
     transition: transform 0.15s ease, opacity 0.2s ease;
+
+    margin-bottom: 2.5rem;
 }
 
 .btn-cta:focus-visible {
@@ -71,7 +77,10 @@
     transform: translateY(1px);
 }
 
-@media (max-width: 74rem) {
+
+
+
+@media (max-width: 67rem) {
     .main-hero {
         display: none;
     }
