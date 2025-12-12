@@ -1,9 +1,15 @@
 .about-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-surface-2);
 }
 
 .about-text {
     line-height: 1.5;
+    max-width: 65ch;
+}
+
+@media (max-width: 67rem) {
+    .about-text {
+        align-self: center;
+    }
 }

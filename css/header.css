@@ -77,3 +77,52 @@ nav a:focus {
     -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
+
+.menu-burger {
+    display: none;
+    font-size: 2rem;
+    color: var(--color-text-medium);
+    border: none;
+    background: transparent;
+}
+
+.mobile-nav {
+     display: none;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1003db;
+    color: #fff;
+    padding: 2rem;
+}
+
+
+.show-menu{
+    display: block;
+}
+
+
+
+
+/* Gäller när skärmen är 74rem eller bredare */
+@media (min-width: 74rem) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+
+/* Gäller när skärmen är 74rem eller smalare */
+@media (max-width: 74rem) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}

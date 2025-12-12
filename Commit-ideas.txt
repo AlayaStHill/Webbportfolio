@@ -5,7 +5,7 @@
 
 - Gör om till gradient: hero line, kontaktformulär,
 
-- skapa button och en a layoutklass (default, hover, active, focus) DRY
+- fixa button layoutklass och knappar (default, hover, active, focus) DRY
 
 - skapa/förbättra .card-klass, lägga till .card-color-klass (main skills, contact) DRY
 
@@ -37,6 +37,13 @@
 
 - fixa texter
 
+- fixa mobil-vy: bort med vita cards
+
+- sidebar-sections sitter snett åt höger. Hur lägga på card
+
+- Gör menu-burger WCAG-säker
+
+
 =========================================================================
 
 
@@ -45,9 +52,22 @@ Add/define/introduce/create site-body structure with aside, main and aside top s
 
 Senaste commits:
 
-Add sidebar profile layout.
-Style profile image and profile text.
-Add global default text color to base body.
-Add global heading color to base CSS for consistent typography.
+Add mobile burger menu and mobile navbar with JS toggle functionality
 
-Implement base layout structure for the hero section, including text block, portrait image positioning, and accent border.
+- Implement burger button for mobile view
+- Add mobile-specific navbar markup
+- Create JS file to handle open/close toggle
+- Connect aria-expanded and accessibility attributes
+
+Improve accessability and responsive layout.
+
+Add ARIA attributes and accessible name to menu-burger button.
+Adjust hero layout to fix image alignment and lower breakpoint for mobile view.
+
+Include WCAG divider improvement to replace image-based divider
+
+
+
+Make minor changes to mobile view about, contact and profile image sections to improve layout
+
+Add sr-only helper class to visually hide the "Öppna meny" text while keeping it available for screen readers. Improves WCAG compliance for the hamburger menu button.
