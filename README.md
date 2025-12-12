@@ -40,6 +40,7 @@ Exempel på tillämpade riktlinjer:
 - Formulär med labels, felmeddelanden och aria-live
 - Färg används aldrig som enda informationsbärare
 - Responsiv layout som fungerar vid textförstoring och zoom
+
 En separat WCAG‑rapport finns som PDF.
 
 
@@ -47,6 +48,7 @@ Responsiv design
 Sidan är responsiv och anpassar sig efter:
 - mobil
 - desktop
+- 
 Layouten bygger på flexibla containers utan fasta höjder, vilket säkerställer god användbarhet vid olika skärmstorlekar och textförstoring.
 
 
