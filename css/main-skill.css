@@ -38,4 +38,12 @@
         /* nollställer span 2 column i git-card */
         grid-column: auto;
     }
+
+    .skill-card {
+        background: var(--color-surface-2);
+    }
+
+     .skill-card-orange {
+        background-color: var(--color-surface-3);
+    }
 }

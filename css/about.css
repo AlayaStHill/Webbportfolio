@@ -5,4 +5,11 @@
 
 .about-text {
     line-height: 1.5;
+    max-width: 65ch;
+}
+
+@media (max-width: 67rem) {
+    .about-text {
+        align-self: center;
+    }
 }

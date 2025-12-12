@@ -54,7 +54,7 @@
 .form-group input,
 .form-group textarea {
     background: transparent;
-    /* strider mot wcag (:focus) */
+    /* strider mot wcag (:focus), nedan fix */
     outline: none;
     border: none;
 }
@@ -126,12 +126,16 @@
 }
 
 
-@media (max-width: 74rem) {
+@media (max-width: 67rem) {
     .contact-info {
         flex-direction: column;
     }
 
     .contact-info-card {
         width: 100%;
+    }
+
+    .contact-form {
+        background: #fff;
     }
 }

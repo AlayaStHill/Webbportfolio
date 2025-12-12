@@ -30,15 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         weatherFeelsP.textContent = `Känns som ${Math.round(feels_like)} °C`;
         weatherLocationP.textContent = location;
 
-      
-
-
-        // console.log("temp", temp);
-        // console.log("feelsLike", feels_like);
-        // console.log("description", description);
-        // console.log("icon", icon);
-        // console.log("data", data);
-
     } catch (error) {
         console.error("Väder API-fel:", error);
         return;

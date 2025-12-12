@@ -260,6 +260,10 @@
         box-shadow: none;
     }
 
+    .sidebar-profile-img {
+        width: 80%
+    }
+
     .download-btn-wrapper {
         display: flex;
         width: 100%;

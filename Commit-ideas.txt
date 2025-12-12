@@ -65,3 +65,9 @@ Add ARIA attributes and accessible name to menu-burger button.
 Adjust hero layout to fix image alignment and lower breakpoint for mobile view.
 
 Include WCAG divider improvement to replace image-based divider
+
+
+
+Make minor changes to mobile view about, contact and profile image sections to improve layout
+
+Add sr-only helper class to visually hide the "Öppna meny" text while keeping it available for screen readers. Improves WCAG compliance for the hamburger menu button.
