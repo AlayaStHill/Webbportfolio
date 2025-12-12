@@ -123,6 +123,7 @@
     border-bottom: none;
 }
 
+/* =========================== Media queries MOBIL ======================================== */
 
 @media (max-width: 67rem) {
     .contact-info {
