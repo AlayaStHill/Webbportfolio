@@ -22,7 +22,7 @@
     /* active */
     --gradient-accent-active: linear-gradient(90deg, #C96A00 0%, #DA5F00 50%, #D31A08 100%);
 
-    --color-error: #ec1b09;
+    --color-error: #d32f2f;
 
     --font-headings: "Poppins", sans-serif;
     --font-body: "Raleway", sans-serif;

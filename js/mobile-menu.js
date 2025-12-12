@@ -5,7 +5,6 @@ const mobileNav = document.getElementById("mobile-nav");
 
 function toggleMenu() {
     if (mobileNav.classList.contains("show-menu")) {
-
         mobileNav.classList.remove("show-menu");
     } else {
         mobileNav.classList.add("show-menu");

@@ -44,7 +44,6 @@
 
 Innan inlämning:
 
-- kontaktformulär
 - readme
 - wcag-dokument
 - gör footer

@@ -1,0 +1,11 @@
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.0325rem;
+}
