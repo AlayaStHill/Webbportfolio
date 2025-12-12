@@ -16,6 +16,7 @@ Webbportföljen innehåller följande sektioner:
 - Kontaktformulär med validering
 - Footer
 
+
 Tekniker och verktyg
 Frontend
 - HTML5 – semantisk struktur
@@ -27,6 +28,7 @@ Frontend
 - Font Awesome & SVG‑ikoner
 - Google Fonts
 - OpenWeather API – extern API‑integration
+
 
 Tillgänglighet (WCAG)
 Webbplatsen är utvecklad med fokus på WCAG 2.1 nivå AA och POUR‑principerna.
@@ -40,11 +42,13 @@ Exempel på tillämpade riktlinjer:
 - Responsiv layout som fungerar vid textförstoring och zoom
 En separat WCAG‑rapport finns som PDF.
 
+
 Responsiv design
 Sidan är responsiv och anpassar sig efter:
 - mobil
 - desktop
 Layouten bygger på flexibla containers utan fasta höjder, vilket säkerställer god användbarhet vid olika skärmstorlekar och textförstoring.
+
 
 Testning och kvalitet
 - Manuell testning av tangentbordsnavigation
@@ -52,12 +56,14 @@ Testning och kvalitet
 - Test av formulärvalidering och felhantering
 - Testad i modern webbläsare
 
+
 Arbetsmetodik
 Projektet har utvecklats med:
 - Feature branches
 - Tydliga commits i imperativ form
 - Iterativ förbättring
 - Fokus på läsbar och underhållbar kod
+
 
 Om mig
 Jag studerar till Webbutvecklare .NET och har ett starkt intresse för struktur, tillgänglighet och hållbar kod. Jag arbetar med både frontend och backend och strävar efter att bygga lösningar som är inkluderande, stabila och långsiktiga.
