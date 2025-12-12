@@ -116,13 +116,38 @@
     transform: translateY(1px);
 }
 
-.error {
-    color: red;
+.contact-success {
+  background-color: var(--color-surface-1);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-success h2 {
+  margin-bottom: 0.5rem;
+}
+
+
+/* ====== ERROR ====== */
+.form-group textarea.has-error {
+    border-color: var(--color-secondary);
 }
 
 .error-message {
-    display: none;
-    color: red;
+    color: var(--color-secondary);
+    font-size: 0.875rem;
+    min-height: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.form-group.has-error {
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.form-group-message.has-error {
+    border-bottom: none;
 }
 
 
