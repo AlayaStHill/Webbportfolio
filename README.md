@@ -66,4 +66,5 @@ Projektet har utvecklats med:
 
 
 Om mig
+
 Jag studerar till Webbutvecklare .NET och har ett starkt intresse för struktur, tillgänglighet och hållbar kod. Jag arbetar med både frontend och backend och strävar efter att bygga lösningar som är inkluderande, stabila och långsiktiga.
