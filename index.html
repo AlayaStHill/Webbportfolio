@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="css/button.css">
 
+    <script src="js/weather.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/validation.js" defer></script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
                     <li><a href="#portfolio">Portfölj</a></li>
                 </ul>
             </nav>
-           
+
             <button class="menu-burger" id="menu-burger-btn" aria-expanded="false" aria-controls="mobile-nav">
                 <i class="fa-solid fa-bars" aria-hidden="true"></i><span class="sr-only">Öppna meny</span></button>
 
@@ -161,9 +164,9 @@
                 </section>
 
                 <!-- ====== Väder-API del ====== -->
-                <section class="sidebar-section sidebar-weather " id="weather-info">
+                <section class="sidebar-section sidebar-weather" id="weather-info">
                     <div class="weather-img-wrapper">
-                        <img id="weather-icon" src="default-weather.png" alt="Väderikon">
+                        <img id="weather-icon" alt="Väderikon">
                     </div>
                     <div>
                         <h3 id="weather-location"></h3>
@@ -441,49 +444,62 @@
                                 </div>
                             </div>
 
-                            <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
-                                <input type="hidden" name="access_key" value="0d62155d-2058-482e-88f5-d0b4641035d2 ">
+                            <form action="https://api.web3forms.com/submit" method="post" class="contact-form"
+                                novalidate>
+                                <input type="hidden" name="access_key" value="0d62155d-2058-482e-88f5-d0b4641035d2">
 
                                 <!-- snake_case vanligt för många API:er, name-värdet skickas -->
                                 <!-- Förnamn -->
                                 <div class="form-group">
-                                    <p id="error-firstname" class="error-message" aria-live="polite">Ange Förnamn</p>
+                                    <p id="error-firstname" class="error-message" aria-live="polite"></p>
 
                                     <label for="first-name" id="firstname-label">Förnamn:</label>
-                                    <input type="text" id="first-name" name="first_name" required
+                                    <input type="text" id="first-name" name="first_name" required data-field="firstname"
+                                        data-error="Fältet Förnamn får inte vara tomt."
                                         aria-describedby="error-firstname">
                                 </div>
 
                                 <!-- Efternamn -->
                                 <div class="form-group">
-                                    <p id="error-lastname" class="error-message" aria-live="polite">Ange Efternamn</p>
+                                    <p id="error-lastname" class="error-message" aria-live="polite"></p>
 
                                     <label for="last-name">Efternamn:</label>
-                                    <input type="text" id="last-name" name="last_name" required
+                                    <input type="text" id="last-name" name="last_name" required data-field="lastname"
+                                        data-error="Fältet Efternamn får inte vara tomt."
                                         aria-describedby="error-lastname">
                                 </div>
 
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <p id="error-email" class="error-message" aria-live="polite">Ange E-post</p>
+                                    <p id="error-email" class="error-message" aria-live="polite"></p>
 
                                     <label for="email">E-postadress:</label>
-                                    <input type="email" id="email" name="email" required aria-describedby="error-email">
+                                    <input type="email" id="email" name="email" required data-field="email"
+                                        data-error="Skriv en giltig e-postadress, t.ex. namn@example.com."
+                                        aria-describedby="error-email">
                                 </div>
 
                                 <!-- Meddelande -->
                                 <div class="form-group form-group-message">
-                                    <p id="error-message" class="error-message" aria-live="polite">Ange Meddelande</p>
+                                    <p id="error-message" class="error-message" aria-live="polite"></p>
 
                                     <label for="message">Meddelande:</label>
-                                    <textarea id="message" name="message" required
+                                    <textarea id="message" name="message" required data-field="message"
+                                        data-error="Meddelandet får inte vara tomt"
                                         aria-describedby="error-message"></textarea>
                                 </div>
                                 <div class="submit">
                                     <button type="submit" class="submit-btn">Skicka</button>
-
                                 </div>
                             </form>
+
+                            <section id="contact-success" class="contact-success" hidden>
+                                <h2>Meddelandet är skickat 🎉</h2>
+                                <p>
+                                    Tack för att du hörde av dig!
+                                    Jag återkommer så snart jag kan.
+                                </p>
+                            </section>
                         </div>
                     </div>
                 </section>
@@ -498,7 +514,4 @@
             </div>
         </div>
     </footer>
-    <script src="weather.js"></script>
-    <script src="mobile-menu.js"></script>
-    <script src="validation.js"></script>
 </body>

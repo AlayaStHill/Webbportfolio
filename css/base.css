@@ -101,7 +101,8 @@ ul {
 
 /* Inte få browser-standard font */
 button,
-input {
+input,
+textarea {
     font: inherit;
 }
 
