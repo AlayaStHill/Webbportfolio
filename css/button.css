@@ -26,18 +26,23 @@
     transform: translateY(1px);
 }
 
-.secondary-btn {
-    padding: 0.5rem 1.8rem;
-    border-radius: 5rem;
-    font-weight: 600;
 
+
+.secondary-btn {
+    border-radius: var(--radius-pill);
+    font-weight: 600;
     border: 2px solid transparent;
     background:
         linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
         var(--gradient-accent-default) border-box;
     color: var(--color-text-body);
     transition: transform 0.15s ease, opacity 0.2s ease;
+}
 
+.secondary-btn:focus-visible {
+    outline: 3px solid #0B5FFF;
+    outline-offset: 3px;
+    filter: brightness(1.07);
 }
 
 .secondary-btn:hover {

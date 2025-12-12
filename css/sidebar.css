@@ -95,6 +95,7 @@
 
 
 /* ====== Kontakt del ============================= */
+
 .sidebar-contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -152,7 +153,7 @@
     align-items: center;
     gap: 0.8rem;
     margin-top: 0.5rem;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.3rem 0.7rem 1rem;
     /* texten radbryts inte */
     white-space: nowrap;
 }
@@ -162,7 +163,9 @@
     height: 1.25rem;
 }
 
+
 /* ====== Väder-api ===================================== */
+
 .sidebar-weather {
     display: flex;
     justify-content: center;
@@ -198,6 +201,7 @@
 
 
 /* ====== Tekniska färdigheter ===================================== */
+
 .sidebar-skill-wrapper {
     display: flex;
     flex-direction: column;
@@ -239,6 +243,7 @@
 }
 
 
+/* =========================== Media queries MOBIL ======================================== */
 
 @media (max-width: 67rem) {
 

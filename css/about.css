@@ -8,6 +8,9 @@
     max-width: 65ch;
 }
 
+
+/* =========================== Media queries MOBIL ======================================== */
+
 @media (max-width: 67rem) {
     .about-text {
         align-self: center;
