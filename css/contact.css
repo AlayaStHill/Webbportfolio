@@ -130,11 +130,11 @@
 
 /* ====== ERROR ====== */
 .form-group textarea.has-error {
-    border-color: var(--color-secondary);
+    border-color: var(--color-error);
 }
 
 .error-message {
-    color: var(--color-secondary);
+    color: var(--color-error);
     font-size: 0.875rem;
     min-height: 1.4rem;
     font-weight: 400;
@@ -143,7 +143,7 @@
 }
 
 .form-group.has-error {
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-error);
 }
 
 .form-group-message.has-error {

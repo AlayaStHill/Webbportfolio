@@ -177,11 +177,13 @@
 #weather-location {
     font-size: 1.5rem;
     font-weight: 500;
+    display: block;
 }
 
 #weather-temp {
     font-size: 2.5rem;
     font-weight: 700;
+    display: block;
 }
 
 #weather-feels {
