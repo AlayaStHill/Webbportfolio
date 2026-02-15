@@ -7,7 +7,7 @@
 .skills-list {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skill-card {
@@ -33,7 +33,13 @@
     justify-self: center;
 }
 
-@media (max-width: 74rem) {
+.skills-section {
+    padding: 3rem;
+}
+
+
+
+@media (max-width: 67rem) {
     .skill-card-center {
         /* nollställer span 2 column i git-card */
         grid-column: auto;
@@ -46,4 +52,13 @@
      .skill-card-orange {
         background-color: var(--color-surface-3);
     }
+
+    
 }
+
+@media (max-width: 48rem) {
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+

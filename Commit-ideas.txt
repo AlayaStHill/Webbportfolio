@@ -35,6 +35,6 @@ Commits:
 
 Remove unused spacing variables and DRY up button styles
 
-feat: add Learning Platform (backend) project to portfolio
+feat: Add Learning Platform (backend) project to portfolio.
 
-style: improve portfolio button alignment and disabled state
+style: Improve portfolio button alignment and disabled state
