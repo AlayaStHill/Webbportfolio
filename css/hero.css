@@ -34,6 +34,10 @@
     margin-bottom: 2rem;
 }
 
+.hero-text {
+  line-height: 1.55;
+}
+
 .hero-img {
     /* max-width är tak. På stor skärm bredd 18, men mindre om containern blir mindre */
     width: 18rem;
