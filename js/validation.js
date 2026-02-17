@@ -70,9 +70,9 @@ fields.forEach(input => {
 });
 
 
- /* e = eventobjekt, skapas automatiskt av webbläsaren när ett event triggas, ex. submit.
-   e innehåller information om eventet, ex. vilket element och används (preventDefault) för
-   att hindra webbläsarens standardbeteende - att skicka formuläret. */
+/* e = eventobjekt, skapas automatiskt av webbläsaren när ett event triggas, ex. submit.
+  e innehåller information om eventet, ex. vilket element och används (preventDefault) för
+  att hindra webbläsarens standardbeteende - att skicka formuläret. */
 document.querySelector("form").addEventListener("submit", async (e) => {
     e.preventDefault(); // stoppar Web3Forms standard-sida
 
@@ -99,15 +99,31 @@ document.querySelector("form").addEventListener("submit", async (e) => {
         });
 
         if (response.ok) {
+            const successMessage = document.querySelector("#contact-success");
+
             // töm formuläret
             form.reset();
 
             // visa success-text
-            document.querySelector("#contact-success").hidden = false;
+            successMessage.hidden = false;
+
+            // gör texten synlig för hjälpmedel, fokusbar via js - behövs för att focus() ska fungera
+            successMessage.setAttribute("tabindex", "-1");
+            // flyttar fokus till meddelandet så att feedbacken uppmärksammas av hjälpmedel
+            successMessage.focus();
 
             // scrolla till success-texten
-            document.querySelector("#contact-success").scrollIntoView({
-            });
+            successMessage.scrollIntoView();
+
+            // dölj efter 8 sek
+            setTimeout(() => {
+                successMessage.hidden = true;
+                successMessage.removeAttribute("tabindex");
+            }, 8000); 
+
+
+
+
         }
     } catch (error) {
         console.error("Form submission error:", error);

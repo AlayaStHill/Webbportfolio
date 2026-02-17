@@ -30,24 +30,6 @@
     /* knappar */
     --radius-pill: 20px;
 
-    /* spacing (gap, padding, margin) */
-    /* ikon + text i knappar/kontaktkort */
-    --space-xxs: 0.25rem;
-    /* sociala medie-ikoner sidebar */
-    --space-xs: 0.5rem;
-    /* phone/email informationskort */
-    --space-sm: 0.75rem;
-    /* padding i större kort */
-    --space-md: 1rem;
-    /* kontakt-kort */
-    --space-lg: 1.5rem;
-    /* mellan stora sektioner */
-    --space-xl: 2rem;
-
-    /* breakpoints i media queries (responsiv design) får vara i px?*/
-    --bp-mobile: 480px;
-    --bp-tablet: 768px;
-    --bp-desktop: 1024px;
 }
 
 /* === Reset === */
@@ -106,8 +88,9 @@ textarea {
     font: inherit;
 }
 
-/* === Global basestyling === */
 
+
+/* === Global basestyling === */
 
 /* Sätter hover underline för att särskilja länkarna enligt WCAG, eftersom jag stylat bort länk-utseendet */
 a {

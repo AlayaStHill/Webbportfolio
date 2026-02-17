@@ -1,6 +1,6 @@
 .portfolio-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 }
 
@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 1rem;
     min-width: 0;
+    padding: 2rem;
 }
 
 .portfolio-project-title {
@@ -22,72 +23,40 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: auto;
+
 }
+
+.project-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .btn-live {
-    display: inline-block;
-    max-width: 7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.7rem 1rem;
-    border-radius: var(--radius-pill);
-    border: none;
-    background: var(--gradient-accent-default);
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: transform 0.15s ease, opacity 0.2s ease;
     white-space: nowrap;
-}
-
-.btn-live:focus-visible {
-    outline: 3px solid #0B5FFF;
-    outline-offset: 3px;
-    filter: brightness(1.07);
-}
-
-.btn-live:hover {
-    background: var(--gradient-accent-hover);
-    transform: translateY(-1px);
-    text-decoration: none;
-}
-
-.btn-live:active {
-    background: var(--gradient-accent-active);
-    transform: translateY(1px);
 }
 
 .btn-github {
     padding: 0.5rem 0.5rem;
-    border-radius: var(--radius-pill);
-    font-weight: 600;
-
-    border: 2px solid transparent;
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-default) border-box;
-    color: var(--color-text-body);
-    transition: transform 0.15s ease, opacity 0.2s ease;
 }
 
-.btn-github:hover {
-    text-decoration: none;
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-hover) border-box;
-    color: var(--color-text-body);
-    transform: translateY(-1px);
-}
 
-.btn-github:active {
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-active) border-box;
-    color: var(--color-text-body);
-    transform: translateY(1px);
-}
+/* =========================== Media queries MOBIL ======================================== */
 
-@media (max-width: 74rem) {
+/* @media (max-width: 74rem) {
     .portfolio-card {
         padding: 3rem;
+    }
+} */
+
+@media (max-width: 64rem) {
+    .portfolio-wrapper {
+        grid-template-columns: 1fr;
     }
 }

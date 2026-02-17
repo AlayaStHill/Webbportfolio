@@ -49,10 +49,6 @@
     text-decoration: none;
 }
 
-nav a:focus {
-    outline: none;
-}
-
 /* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
 .navbar-list a:focus-visible {
     outline: 3px solid #0B5FFF;
@@ -105,19 +101,17 @@ nav a:focus {
     display: block;
 }
 
+/* =========================== Media queries MOBIL ======================================== */
 
-
-
-/* Gäller när skärmen är 74rem eller bredare */
-@media (min-width: 74rem) {
+/* Gäller när skärmen är 67rem eller bredare */
+@media (min-width: 67rem) {
     .mobile-nav {
         display: none;
     }
 }
 
-
-/* Gäller när skärmen är 74rem eller smalare */
-@media (max-width: 74rem) {
+/* Gäller när skärmen är 67rem eller smalare */
+@media (max-width: 67rem) {
     .navbar {
         display: none;
     }

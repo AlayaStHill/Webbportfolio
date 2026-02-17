@@ -178,3 +178,11 @@
         padding: 0;
     }
 }
+
+/* @media (max-width: 48rem) {
+    .card {
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+} */

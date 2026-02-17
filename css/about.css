@@ -1,15 +1,18 @@
 .about-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-text {
-    line-height: 1.5;
-    max-width: 65ch;
+  line-height: 1.65;
+  max-width: 65ch;
 }
 
+/* =========================== Media queries MOBIL ======================================== */
+
 @media (max-width: 67rem) {
-    .about-text {
-        align-self: center;
-    }
+  .about-text {
+    align-self: center;
+    padding: 1rem;
+  }
 }

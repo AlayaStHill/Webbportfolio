@@ -87,44 +87,17 @@
 
 .submit-btn {
     padding: 0.5rem 1.8rem;
-    border-radius: 5rem;
-    font-weight: 600;
-
-    border: 2px solid transparent;
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-default) border-box;
-    color: var(--color-text-body);
-    transition: transform 0.15s ease, opacity 0.2s ease;
-
-}
-
-.submit-btn:hover {
-    text-decoration: none;
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-hover) border-box;
-    color: var(--color-text-body);
-    transform: translateY(-1px);
-}
-
-.submit-btn:active {
-    background:
-        linear-gradient(var(--color-surface-1), var(--color-surface-1)) padding-box,
-        var(--gradient-accent-active) border-box;
-    color: var(--color-text-body);
-    transform: translateY(1px);
-}
+}   
 
 .contact-success {
-  background-color: var(--color-surface-1);
-  padding: 3rem;
-  border-radius: 12px;
-  text-align: center;
+    background-color: var(--color-surface-1);
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .contact-success h2 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -150,6 +123,7 @@
     border-bottom: none;
 }
 
+/* =========================== Media queries MOBIL ======================================== */
 
 @media (max-width: 67rem) {
     .contact-info {

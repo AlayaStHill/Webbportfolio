@@ -1,9 +1,6 @@
 /////////////////////// ATT GÖRA: ////////////////////////////
-- Align logo med sidebar 
 
-- Sidebar längre?
-
-- Gör om till gradient: hero line, kontaktformulär,
+- Gör om till gradient: hero line
 
 - fixa button layoutklass och knappar (default, hover, active, focus) DRY
 
@@ -13,62 +10,31 @@
 
 - lägga till ikoner för kontakt sektionen
 
-- align cards main?
-
-- fixa line-height cards main
-
-- fixa headings-klass! blir konstigt
-
-- lägg in cv
-
-- margin bottom på ladda ned CV
-
-- script defer för att samla i head
-
 - ta bort oanvända klasser: skills-section?
 
 - textfärger, inte använt base-variabler
 
-- GitHub länk hover för otydlig skillnad
-
-- Gör fokus-form bättre på logo
-
-- navigation i main till början av sektionen
+- Gör fokus-form bättre på logo och outline-only knappar
 
 - fixa texter
 
 - sidebar-sections sitter snett åt höger. Hur lägga på card
 
-- fixa weather js
-
-
-Innan inlämning:
-
-- readme
-- wcag-dokument
-- gör footer
+- fult fokus i hamburgermenyn
 
 
 
 =========================================================================
 
 
-Add/Define/Introduce/Create/Improve/Refine/Implement/Include/Adjust/Make/Update/Change
+Add/Define/Introduce/Create/Improve/Refine/Implement/Include/Adjust/Make/Update/Change/Fix/Refactor
 
 
 Commits:
 
 
-Improve accessability and responsive layout.
+Remove unused spacing variables and DRY up button styles
 
-Add ARIA attributes and accessible name to menu-burger button.
-Adjust hero layout to fix image alignment and lower breakpoint for mobile view.
+feat: Add Learning Platform (backend) project to portfolio.
 
-Include WCAG divider improvement to replace image-based divider
-
-Make minor changes to mobile view about, contact and profile image sections to improve layout
-
-
-Add form validation with field-specific errors and custom submit feedback
-
-
+style: Improve portfolio button alignment and disabled state
