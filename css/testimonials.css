@@ -1,0 +1,28 @@
+.testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* centrera */
+    margin-inline: auto;
+    gap: 2rem;
+    /* radläng läsbarhet */
+    max-width: 65ch;
+}
+
+.testimonial-card {
+  border-left: 3px solid var(--color-text-border);
+  padding-left: 1rem;
+}
+
+.testimonial-quote {
+    /* lite större för läsbarhet */
+    font-size: 1.05rem;
+    /* luft till author */
+    margin-bottom: 0.6rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    font-size: 0.95rem;
+    /* mjukare */
+    opacity: 0.9;
+}

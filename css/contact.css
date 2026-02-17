@@ -1,0 +1,140 @@
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+
+}
+
+.contact-info-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    min-height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-info-card-orange {
+    background-color: var(--color-surface-3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--color-surface-1);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-text-border);
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    /* strider mot wcag (:focus), nedan fix */
+    outline: none;
+    border: none;
+}
+
+/* wcag, fokus måste synas tydligt */
+.form-group:focus-within {
+    border-bottom-color: var(--color-primary);
+    /* för att förhindra att browsers tar bort focus pga outline: none, säkerhetsåtgärd */
+    outline: 2px solid transparent;
+}
+
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: 2px solid transparent;
+}
+
+.form-group-message {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.7rem;
+}
+
+.form-group-message textarea {
+    height: 10rem;
+    border: 2px solid var(--color-text-border);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.submit-btn {
+    padding: 0.5rem 1.8rem;
+}   
+
+.contact-success {
+    background-color: var(--color-surface-1);
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-success h2 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ====== ERROR ====== */
+.form-group textarea.has-error {
+    border-color: var(--color-error);
+}
+
+.error-message {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    min-height: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.form-group.has-error {
+    border-bottom: 2px solid var(--color-error);
+}
+
+.form-group-message.has-error {
+    border-bottom: none;
+}
+
+/* =========================== Media queries MOBIL ======================================== */
+
+@media (max-width: 67rem) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info-card {
+        width: 100%;
+    }
+
+    .contact-form {
+        background: #fff;
+    }
+}

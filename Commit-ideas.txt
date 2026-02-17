@@ -1,0 +1,40 @@
+/////////////////////// ATT GÖRA: ////////////////////////////
+
+- Gör om till gradient: hero line
+
+- fixa button layoutklass och knappar (default, hover, active, focus) DRY
+
+- skapa/förbättra .card-klass, lägga till .card-color-klass (main skills, contact) DRY
+
+- lägga till ikoner för skills-section
+
+- lägga till ikoner för kontakt sektionen
+
+- ta bort oanvända klasser: skills-section?
+
+- textfärger, inte använt base-variabler
+
+- Gör fokus-form bättre på logo och outline-only knappar
+
+- fixa texter
+
+- sidebar-sections sitter snett åt höger. Hur lägga på card
+
+- fult fokus i hamburgermenyn
+
+
+
+=========================================================================
+
+
+Add/Define/Introduce/Create/Improve/Refine/Implement/Include/Adjust/Make/Update/Change/Fix/Refactor
+
+
+Commits:
+
+
+Remove unused spacing variables and DRY up button styles
+
+feat: Add Learning Platform (backend) project to portfolio.
+
+style: Improve portfolio button alignment and disabled state

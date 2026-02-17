@@ -1,0 +1,64 @@
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skills-list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    /* min-, försöker göra sidan mindre känslig för storleks-inställningar på bildskärmar */
+    min-height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.skill-card-orange {
+    background-color: var(--color-surface-3);
+}
+
+.skill-card-center {
+    /* sträcker sig 2 kolumner */
+    grid-column: span 2;
+    /* Nödvändig? */
+    justify-self: center;
+}
+
+.skills-section {
+    padding: 3rem;
+}
+
+
+
+@media (max-width: 67rem) {
+    .skill-card-center {
+        /* nollställer span 2 column i git-card */
+        grid-column: auto;
+    }
+
+    .skill-card {
+        background: var(--color-surface-2);
+    }
+
+     .skill-card-orange {
+        background-color: var(--color-surface-3);
+    }
+
+    
+}
+
+@media (max-width: 48rem) {
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+

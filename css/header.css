@@ -1,0 +1,122 @@
+.logo {
+    /* cursive fallback */
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.logo-firstname {
+    color: var(--color-text-medium)
+}
+
+.logo-lastname {
+    /* lägger gradienten bakom texten */
+    background: var(--gradient-accent-default);
+    /* klipper gradienten till textens form */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* gör att gradienten syns genom texten */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    padding-right: 0.2rem;
+}
+
+.navbar {
+    color: var(--color-text-medium);
+    font-family: var(--font-headings);
+}
+
+.navbar-list a {
+    /* styr klickytan och fokusbeteendet, a är annars inline */
+    display: block;
+    padding: 0rem 0.25rem;
+
+    font-weight: 500;
+    font-size: 1rem;
+    /* Ökar läsbarhet */
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease, text-underline-offset 0.2s ease;
+}
+
+/* Överstyr base */
+.navbar-list a:hover {
+    background: var(--gradient-accent-default);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+/* WCAG obligatoriskt, när länken (fokusbara element) får fokus via tab (ej via mus), ger en outline*/
+.navbar-list a:focus-visible {
+    outline: 3px solid #0B5FFF;
+    /* avståndet mellan elementet och outline */
+    outline-offset: 4px;
+    border-radius: var(--radius-pill);
+
+    background: var(--gradient-accent-default);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-list a:active {
+    transform: translateY(1px);
+    background: var(--gradient-accent-active);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.menu-burger {
+    display: none;
+    font-size: 2rem;
+    color: var(--color-text-medium);
+    border: none;
+    background: transparent;
+}
+
+.mobile-nav {
+     display: none;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1003db;
+    color: #fff;
+    padding: 2rem;
+}
+
+
+.show-menu{
+    display: block;
+}
+
+/* =========================== Media queries MOBIL ======================================== */
+
+/* Gäller när skärmen är 67rem eller bredare */
+@media (min-width: 67rem) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* Gäller när skärmen är 67rem eller smalare */
+@media (max-width: 67rem) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}
