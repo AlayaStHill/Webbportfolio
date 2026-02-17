@@ -20,12 +20,12 @@ Webbportföljen innehåller följande sektioner:
 - Footer
 
 ## Tekniker och verktyg
-Frontend
+### Frontend
 - HTML5 – semantisk struktur
 - CSS3 – component based CSS, Flexbox, Grid, CSS‑variabler
 - JavaScript (ES6) – interaktivitet, menylogik och formulärvalidering
 
-Övrigt
+### Övrigt
 - Git & GitHub – versionshantering med feature branches
 - VS Code – utvecklingsmiljö
 - Font Awesome & SVG‑ikoner
