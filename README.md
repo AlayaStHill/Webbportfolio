@@ -48,7 +48,7 @@ En separat WCAG‑rapport finns som PDF.
 
 
 ## Responsiv design
-WWebbplatsen är anpassad för:
+Webbplatsen är anpassad för:
 - Mobil
 - Desktop
   
@@ -69,6 +69,3 @@ Projektet har utvecklats med:
 - Iterativ förbättring
 - Fokus på läsbar och underhållbar kod
 
-
-## Om mig
-Jag studerar till Webbutvecklare .NET och har ett starkt intresse för struktur, tillgänglighet och hållbar kod. Jag arbetar med både frontend och backend och strävar efter att bygga lösningar som är inkluderande, stabila och långsiktiga.
